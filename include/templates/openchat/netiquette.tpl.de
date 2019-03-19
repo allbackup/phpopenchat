@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?=$_SESSION['translator']->get_language()?>">
+  <head>
+    <meta http-equiv="Content-type" content='<?=$_SESSION['template']->get_content_type()?>; charset="<?=$_SESSION['translator']->out('CHARACTER_ENCODING')?>"' />
+    <title>Title</title>
+    <link rel="stylesheet" href="<?=$_SESSION['template']->get_theme_path()?>/css/default.css" />
+    <script type="text/javascript">
+    /*<![CDATA[*/
+
+    /*]]>*/
+    </script>
+  </head>
+  <body>
+    <div class="satContent">
+      <h1>Chatiquette</h1>
+      <p>Im Chat kann sich jeder mit einem und mehreren anderen Chattern unterhalten. Du trägst damit auch eine Verantwortung für des Spaß aller Teilnehmer im Chat. darum ist es wichtig im Chat auf bestimmte Regeln zu achten:
+Bringe Dich und alle anderen Teilnehmer des Chats nicht in Verruf, indem Du Parolen gewaltverherrlichenden, rassistischen oder pornografischen Inhalts verbreitest oder solche bei Deinen Mitchattern tolerierst!</p>
+      <div class="satContentBox">
+        <dl>
+          <dt class="contentBoxTitle">
+            &nbsp;Regeln
+          </dt>
+          <dd>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>
+                        Aussagen gewaltverherrlichenden, rassistischen oder pornografischen Inhalts haben in diesem Chat nichts zu suchen. Solltest Du dennoch solche verbreiten, wirst Du gesperrt.
+                      </li>
+                      <li>
+                        Du hast einen Spitznamen im Chat, verrate weder Deinen richtigen Namen noch Deine Telefonnumer oder Adresse öffentlich. Du kannst ja auch flüstern!
+                      </li>
+                      <li>
+                        Achte die Persönlichkeit Deiner Mitchatter.
+                      </li>
+                      <li>
+                        Du bist für den Inhalt Deiner Aussagen selbst verantwortlich.
+                      </li>
+                    </ul>
+                    <p>
+                      Wenn Du mit den Regeln einverstanden bist, geht es hier zur <a href="register.php">Registierung</a>, wenn nicht kommst Du hier zur <a href="index.php">Homepage</a> des Chats.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="menu">
+    <div class="flagBox"><?=$TEMPLATE_OUT['lang_switch']?></div>
+      <ul>
+        <li>
+          <a href="index.php">Startseite des Chats</a>
+        </li>
+      </ul>
+      &nbsp;<br />
+      <div class="menuBox">
+        <dl>
+          <dt class="menuBoxTitle">&nbsp;Weitere Infos</dt>
+          <dd>
+            <p>
+              Weitere Regeln von <a href="http://www.chatiquette.de/">chatiquette.de</a>
+            </p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </body>
+</html>

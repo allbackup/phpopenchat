@@ -1,0 +1,11 @@
+[How to report bugs. List of known BUGS that must NOT be reported since
+they are already known.]
+
+- class.Chat Line 907 problems while reading template output.tpl (some times)
+- class.Linie_Buffer_Mem variable key 22 doesn't exists in line 343
+- some JavaScript GET-requests lacks session information as parameter
+- update of LAST_CHANNEL doesn't work while changing channels
+- /private_input.php on line 74 (line_buffer doesn't exists some times)
+- email confirmation doesn't work
+- check of an image url fails, although the image exists
+- 

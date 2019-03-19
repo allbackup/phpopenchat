@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Line</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Line</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Class Line holds lines written by chatters</p>
+	<ul class="tags">
+				<li><span class="field">version:</span> $Id: class.Line.inc,v 1.42 2003/04/29 16:22:44 letreo Exp $</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">author:</span> Michael Oertel &lt;<a href="mailto:michael@ortelius.de">michael@ortelius.de</a>&gt;</li>
+				<li><span class="field">author:</span> Frerk Meyer &lt;<a href="mailto:frerk@meychern.de">frerk@meychern.de</a>&gt;</li>
+				<li><span class="field">todo:</span> rewrite of method filter_input_buffer() based on preg_replace()</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_include_class_Line_inc.html">Program_Root/include/class.Line.inc</a> (line <span class="field">44</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$approved" title="details" class="var-name">$approved</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">object</span>
+					<a href="#$chatter" title="details" class="var-name">$chatter</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$info" title="details" class="var-name">$info</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$invitationMsg" title="details" class="var-name">$invitationMsg</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$in_private_window" title="details" class="var-name">$in_private_window</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$irc_command" title="details" class="var-name">$irc_command</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$join" title="details" class="var-name">$join</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$leave" title="details" class="var-name">$leave</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$mime_types" title="details" class="var-name">$mime_types</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">object</span>
+					<a href="#$recipient" title="details" class="var-name">$recipient</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$said" title="details" class="var-name">$said</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$sender_busy" title="details" class="var-name">$sender_busy</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$smiley_count" title="details" class="var-name">$smiley_count</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$whispered" title="details" class="var-name">$whispered</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Line" title="details" class="method-name">Line</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$chatter</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$said</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">2</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#filter_buffer_input" title="details" class="method-name">filter_buffer_input</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#filter_buffer_output" title="details" class="method-name">filter_buffer_output</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#filter_irc" title="details" class="method-name">filter_irc</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#get_approved" title="details" class="method-name">get_approved</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#get_chatter" title="details" class="method-name">get_chatter</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#get_invitationMsg" title="details" class="method-name">get_invitationMsg</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_irc_command" title="details" class="method-name">get_irc_command</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_leave" title="details" class="method-name">get_leave</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_login" title="details" class="method-name">get_login</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#get_recipient" title="details" class="method-name">get_recipient</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_said" title="details" class="method-name">get_said</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_sender" title="details" class="method-name">get_sender</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#get_sender_busy" title="details" class="method-name">get_sender_busy</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#get_whispered" title="details" class="method-name">get_whispered</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#in_private_window" title="details" class="method-name">in_private_window</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#is_info" title="details" class="method-name">is_info</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#is_invitationMsg" title="details" class="method-name">is_invitationMsg</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#is_leavingMsg" title="details" class="method-name">is_leavingMsg</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#is_loginMsg" title="details" class="method-name">is_loginMsg</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#is_sender_busy" title="details" class="method-name">is_sender_busy</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#is_whispered" title="details" class="method-name">is_whispered</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#out" title="details" class="method-name">out</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_accepted_mime_types" title="details" class="method-name">set_accepted_mime_types</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$types</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_approved" title="details" class="method-name">set_approved</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_chatter" title="details" class="method-name">set_chatter</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$sender</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_info" title="details" class="method-name">set_info</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_invitationMsg" title="details" class="method-name">set_invitationMsg</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_in_private_window" title="details" class="method-name">set_in_private_window</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#set_leave" title="details" class="method-name">set_leave</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$leave</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#set_login" title="details" class="method-name">set_login</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$login</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_recipient" title="details" class="method-name">set_recipient</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$recipient</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_said" title="details" class="method-name">set_said</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$said</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_sender" title="details" class="method-name">set_sender</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$sender</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_sender_busy" title="details" class="method-name">set_sender_busy</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#set_whispered" title="details" class="method-name">set_whispered</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#test" title="details" class="method-name">test</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_mk_smiley_img_tag" title="details" class="method-name">_mk_smiley_img_tag</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$smiley</span>)
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$approved" id="$approved"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$approved</span>
+			 = <span class="var-default">false</span>			(line <span class="line-number">79</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">true if line is approved by a moderator</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$chatter" id="$chatter"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">object</span>
+			<span class="var-name">$chatter</span>
+			 = <span class="var-default">null</span>			(line <span class="line-number">51</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">chatter object represents a person taking part in a chat session</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$info" id="$info"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$info</span>
+			 = <span class="var-default">false</span>			(line <span class="line-number">136</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$invitationMsg" id="$invitationMsg"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$invitationMsg</span>
+			 = <span class="var-default">false</span>			(line <span class="line-number">107</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">marks a line as invitation message</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$in_private_window" id="$in_private_window"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$in_private_window</span>
+			 = <span class="var-default">false</span>			(line <span class="line-number">114</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">private window flag</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$irc_command" id="$irc_command"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$irc_command</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">86</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">contains an irc-command found in the line</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$join" id="$join"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$join</span>
+						(line <span class="line-number">126</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$leave" id="$leave"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$leave</span>
+						(line <span class="line-number">131</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$mime_types" id="$mime_types"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$mime_types</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">93</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">contains accepted mime types for private images</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$recipient" id="$recipient"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">object</span>
+			<span class="var-name">$recipient</span>
+			 = <span class="var-default">null</span>			(line <span class="line-number">58</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">recipient object represents a person receiving a chat message</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$said" id="$said"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$said</span>
+						(line <span class="line-number">65</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">string said by chatter</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$sender_busy" id="$sender_busy"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$sender_busy</span>
+			 = <span class="var-default">false</span>			(line <span class="line-number">121</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">sender busy flag</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$smiley_count" id="$smiley_count"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$smiley_count</span>
+						(line <span class="line-number">100</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">counts smileys within a line</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$whispered" id="$whispered"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$whispered</span>
+			 = <span class="var-default">false</span>			(line <span class="line-number">72</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">true if line is whispered</p>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodLine" id="Line"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor Line</span> (line <span class="line-number">145</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor for class Line</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Line
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$chatter</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$said</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">2</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$chatter</span><span class="var-description">: chatter object represents a person taking part in a chat session</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$said</span><span class="var-description">: string said by chatter</span>			</li>
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">2</span><span class="var-description">: recipient of the text line</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodfilter_buffer_input" id="filter_buffer_input"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">filter_buffer_input</span> (line <span class="line-number">570</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Filters icons, links, etc.</p>
+<p class="description"><p>in $said</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			filter_buffer_input
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodfilter_buffer_output" id="filter_buffer_output"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">filter_buffer_output</span> (line <span class="line-number">616</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Filters 'says to', 'leaves us', ...</p>
+<p class="description"><p>messages within output frame</p><p>used in getlines.php only</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			filter_buffer_output
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">0</span><span class="var-description">: Translator</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodfilter_irc" id="filter_irc"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">filter_irc</span> (line <span class="line-number">552</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Filters irc-commands in $said</p>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			filter_irc
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_approved" id="get_approved"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_approved</span> (line <span class="line-number">340</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets approved flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			get_approved
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_chatter" id="get_chatter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_chatter</span> (line <span class="line-number">163</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for chatter object</p>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			get_chatter
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_invitationMsg" id="get_invitationMsg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_invitationMsg</span> (line <span class="line-number">212</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the invitationMsg flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			get_invitationMsg
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_irc_command" id="get_irc_command"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_irc_command</span> (line <span class="line-number">350</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the irc-command of line</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_irc_command
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_leave" id="get_leave"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_leave</span> (line <span class="line-number">370</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the nickname of the chatter who is leaving the chat.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_leave
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_login" id="get_login"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_login</span> (line <span class="line-number">360</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the nickname of the chatter who is logging in.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_login
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_recipient" id="get_recipient"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_recipient</span> (line <span class="line-number">181</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for recipient object</p>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			get_recipient
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_said" id="get_said"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_said</span> (line <span class="line-number">288</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for said string</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_said
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_sender" id="get_sender"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_sender</span> (line <span class="line-number">171</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">ignore:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_sender
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_sender_busy" id="get_sender_busy"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_sender_busy</span> (line <span class="line-number">267</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for sender busy flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			get_sender_busy
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_whispered" id="get_whispered"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_whispered</span> (line <span class="line-number">308</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for chatter object</p>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			get_whispered
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodin_private_window" id="in_private_window"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">in_private_window</span> (line <span class="line-number">670</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the private window flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			in_private_window
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodis_info" id="is_info"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_info</span> (line <span class="line-number">257</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for info flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			is_info
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodis_invitationMsg" id="is_invitationMsg"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_invitationMsg</span> (line <span class="line-number">216</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			is_invitationMsg
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodis_leavingMsg" id="is_leavingMsg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_leavingMsg</span> (line <span class="line-number">400</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			is_leavingMsg
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodis_loginMsg" id="is_loginMsg"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_loginMsg</span> (line <span class="line-number">395</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			is_loginMsg
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodis_sender_busy" id="is_sender_busy"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_sender_busy</span> (line <span class="line-number">272</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">alias for get_sender_busy()</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			is_sender_busy
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodis_whispered" id="is_whispered"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_whispered</span> (line <span class="line-number">312</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			is_whispered
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodout" id="out"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">out</span> (line <span class="line-number">629</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns a formatted Line</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/_getlines_php.html">getlines.php</a></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			out
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodset_accepted_mime_types" id="set_accepted_mime_types"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_accepted_mime_types</span> (line <span class="line-number">410</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets accepted mime types for private images</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_accepted_mime_types
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$types</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$types</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_approved" id="set_approved"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_approved</span> (line <span class="line-number">330</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets approved flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_approved
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$bool</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_chatter" id="set_chatter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_chatter</span> (line <span class="line-number">278</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">alias</p>
+	<ul class="tags">
+				<li><span class="field">ignore:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_chatter
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$sender</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodset_info" id="set_info"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_info</span> (line <span class="line-number">247</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Setter for info flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_info
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$bool</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_invitationMsg" id="set_invitationMsg"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_invitationMsg</span> (line <span class="line-number">202</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Setter for invitationMsg</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_invitationMsg
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$bool</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_in_private_window" id="set_in_private_window"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_in_private_window</span> (line <span class="line-number">680</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the private window flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_in_private_window
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$bool</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_leave" id="set_leave"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_leave</span> (line <span class="line-number">390</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the nickname of the chatter who is leaving the chat.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			set_leave
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$leave</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodset_login" id="set_login"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_login</span> (line <span class="line-number">380</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the nickname of the chatter who is logging in.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			set_login
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$login</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodset_recipient" id="set_recipient"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_recipient</span> (line <span class="line-number">191</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Setter for recipient object</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_recipient
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$recipient</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$recipient</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_said" id="set_said"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_said</span> (line <span class="line-number">298</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Setter for said string</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_said
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$said</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$said</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_sender" id="set_sender"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_sender</span> (line <span class="line-number">226</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Setter for sender object</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_sender
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$sender</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$sender</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_sender_busy" id="set_sender_busy"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_sender_busy</span> (line <span class="line-number">237</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Setter for sender busy flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_sender_busy
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$bool</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_whispered" id="set_whispered"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_whispered</span> (line <span class="line-number">320</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Setter for var $whispered</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			set_whispered
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$bool</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodtest" id="test"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">test</span> (line <span class="line-number">690</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Test class Line</p>
+<p class="description"><p>Call like this: Line::test();</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			test
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="method_mk_smiley_img_tag" id="_mk_smiley_img_tag"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_mk_smiley_img_tag</span> (line <span class="line-number">153</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_mk_smiley_img_tag
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$smiley</span>)
+			</div>
+	
+		
+		
+	</div>
+						
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documention generated on Fri,  2 May 2003 10:50:46 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.2.0rc2</a>
+	</p>
+	</div></body>
+</html>

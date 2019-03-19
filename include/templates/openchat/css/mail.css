@@ -1,0 +1,273 @@
+/*   ********************************************************************   **
+**   Copyright notice                                                       **
+**                                                                          **
+**   (c) 1995-2002 PHPOpenChat Development Team                             **
+**   http://phpopenchat.sourceforge.net/                                    **
+**                                                                          **
+**   All rights reserved                                                    **
+**                                                                          **
+**   This script is part of the PHPOpenChat project. The PHPOpenChat        **
+**   project is free software; you can redistribute it and/or modify        **
+**   it under the terms of the GNU General Public License as published by   **
+**   the Free Software Foundation; either version 2 of the License, or      **
+**   (at your option) any later version.                                    **
+**                                                                          **
+**   The GNU General Public License can be found at                         **
+**   http://www.gnu.org/copyleft/gpl.html.                                  **
+**   A copy is found in the textfile GPL and important notices to the       **
+**   license from the team is found in the textfile LICENSE distributed     **
+**   with these scripts.                                                    **
+**                                                                          **
+**   This script is distributed in the hope that it will be useful,         **
+**   but WITHOUT ANY WARRANTY; without even the implied warranty of         **
+**   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          **
+**   GNU General Public License for more details.                           **
+**                                                                          **
+**   This copyright notice MUST APPEAR in all copies of the script!         **
+**   ********************************************************************   */
+
+/*
+  $Author: letreo $
+  $Date: 2003/03/28 15:08:40 $
+  $Source: /cvsroot/phpopenchat/chat3/include/templates/openchat/css/mail.css,v $
+  $Revision: 1.12 $
+*/
+
+:link
+{
+ color: #000;
+ text-decoration: none;
+}
+
+:visited
+{
+ color: #000;
+ text-decoration: none;
+}
+
+div.content a:hover, div.satContent a:hover {
+  text-decoration: none;
+  border: none;
+}
+/*
+.whiteBG
+{
+  color: #000;
+  background-color: #fff;
+}
+
+.content
+{
+  width: 75%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+*/
+.menu
+{
+  margin-left: 80%;
+  border-top: 2px dotted #000;
+}
+
+.toolbar
+{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 78%;
+  height: 16px;
+  background-color: #fff;
+  font: 12px geneva, arial, helvetica, sans-serif;
+  text-align: center;
+  color: #000;
+  border-bottom: 1px solid black;
+}
+
+.sidebar
+{
+  right: 75%;
+  height: 100%;
+  width: 140px;
+  background-color: #fff;
+  font: 11px/14px geneva, arial, helvetica, sans-serif;
+  color: #000; 
+  /*border: 1px dotted black;*/
+}
+
+.messages
+{
+  position: absolute;
+  left: 150px;
+  top: 35px;
+  height: 95%;
+  width: 400px;
+  background-color: #fc0;
+  padding: 3px;
+  font: 10px/14px geneva, arial, helvetica, sans-serif;
+  color: #000;
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  width: 390px;
+}
+
+.messagePane
+{
+  position: relative;
+  
+  height: 75%;
+  background-color: #ddd;
+  font: 10px/14px geneva, arial, helvetica, sans-serif;
+  color: #000; 
+}
+
+td.msgPane
+{
+  background-color: #ddd;
+  font: 10px/14px geneva, arial, helvetica, sans-serif;
+  color: #000; 
+}
+
+div.header
+{
+  margin-bottom: 10px;
+  background-color: #eee;
+  font: 10px/14px geneva, arial, helvetica, sans-serif;
+  color: #000; 
+}
+
+.sendButton
+{
+  width: 35px;
+  font-weight: bold;
+  color: #ee0;
+  background-color: #436a11;
+}
+
+.mailform
+{
+}
+
+.inputField
+{
+  font: 10px/14px geneva, arial, helvetica, sans-serif;
+  color: #000;
+  background-color: #ee0;
+}
+
+TD
+{
+  color: #000; 
+  background-color: #fff;
+  font: 10px/14px geneva, arial, helvetica, sans-serif;
+}
+
+td.hint
+{
+  font: 10px/14px geneva, arial, helvetica, sans-serif;
+  color: #f00;
+  background-color: #ddd;
+}
+
+A.boldLink:visited
+{
+  font: 11px geneva, arial, helvetica, sans-serif;
+  font-weight: bolder;
+}
+A.boldLink:link
+{
+  font: 11px geneva, arial, helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+li.box
+{
+  margin-bottom: 2px;
+  padding-left: 20px;
+  padding-bottom: 2px;
+  list-style: none;
+  background: no-repeat;
+  background-image: url(../images/icons/mail.gif);
+}
+
+li.trash
+{
+  margin-bottom 2px;
+  padding-left: 20px;
+  padding-bottom: 2px;
+  list-style: none;
+  background: no-repeat;
+  background-image: url(../images/icons/recycler.gif);
+}
+
+.friendsHidden, .friends
+{
+  position: absolute;
+  top: 120px;
+  left: 380px;
+  width: 200px;
+  border: 1px dotted black;
+  z-index: 100;
+}
+.friendsHidden
+{
+  visibility: hidden;
+}
+.friends
+{
+  visibility: visible;
+  color: #000;
+  background-color: #fff;
+}
+
+.friend
+{
+  color: #000;
+  background-color: #fff;
+}
+
+/* BEGIN: unset default.css settings */
+div.satContent a:link {
+  color: none;
+  background: none;
+}
+
+div.satContent a:visited {
+  color: none;
+  background: none;
+}
+
+div.satContent a:hover {
+  color: none;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+div.satContent a:active {
+  color: none;
+  background: none;
+}
+/* END: unset default settings */
+
+div.satContent a.active:active,div.satContent td.active
+{
+  color: #fff;
+  background-color: #333366;
+  font: 10px/14px geneva, arial, helvetica, sans-serif;  
+}
+div.satContent a.active:visited { 
+  color: #fff; 
+  background-color: #333366;
+  font: 10px/14px geneva, arial, helvetica, sans-serif;
+}
+div.satContent a.active:link { 
+  color: #fff;
+  background-color: #333366;
+  font: 10px/14px geneva, arial, helvetica, sans-serif;
+}
+div.messages td {
+  background-color: #fc0;
+}
+div.messagePane td{
+  background-color: #ddd;
+}

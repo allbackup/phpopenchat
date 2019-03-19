@@ -1,0 +1,10 @@
+FAQ
+
+PHPOpenChat version 3.0 FAQ
+
+1. What are the requirements for PHPOpenChat?
+2. I don't have Linux. Does it work on Windows too?
+3. I don't have PHP 4.1.x. Does it work with PHP 4.0.x? PHP 3.x?
+4. I don't have MySQL. Does it work without?
+5. Does it work with PostGreSQL/Oracle/MS-SQL/Sybase?
+6. I don't have Apache. Does it work with MS-IIS/iPlanet/Zeus?

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?=$_SESSION['translator']->get_language()?>">
+  <head>
+    <meta http-equiv="Content-type" content='<?=$_SESSION['template']->get_content_type()?>; charset="<?=$_SESSION['translator']->out('CHARACTER_ENCODING')?>"' />
+    <title>Title</title>
+    <link rel="stylesheet" href="<?=$_SESSION['template']->get_theme_path()?>/css/default.css" />
+    <script type="text/javascript">
+    /*<![CDATA[*/
+
+    /*/]]>*/
+    </script>
+  </head>
+  <body>
+    <div class="satContent">
+      <h1>Chatiquette</h1>
+      <p>You are entirely liable for all activities conducted through your Account. Listed below are some, though not all, violations which may result in Chat-Team terminating your Account. You agree not to do any of the following actions while using this Chat:</p>
+      <div class="satContentBox">
+        <dl>
+          <dt class="contentBoxTitle">
+            &nbsp;Rules
+          </dt>
+          <dd>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>harass, threaten, embarrass or cause distress or discomfort upon another Chat participant, user, or other individual or entity;
+                      </li>
+                      <li>transmit via this Chat any information, data, text, files, links, software, or other materials (&quot;<I>Content</I>&quot;) that the Chat-Team considers to be unlawful, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, hateful, racially, ethnically or otherwise objectionable;
+                      </li>
+                      <li>cause any chat room screen in this Chat to &quot;scroll&quot; faster than other Members are able to type to it or any action to a similar disruptive effect;
+                      </li>
+                      <li>disrupt the normal flow of dialogue in a Chat room or otherwise act in a manner that negatively affects other participants;
+                      </li>
+                      <li>post or transmit any unsolicited advertising, promotional materials, or any other forms of solicitation in this Chat; and
+                      </li>
+                      <li>intentionally or unintentionally violate any applicable local, state, national or international law, including but not limited to any regulations having the force of law while using or accessing this Chat.
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="menu">
+    <div class="flagBox"><?=$TEMPLATE_OUT['lang_switch']?></div>
+      <ul>
+        <li>
+          <a href="index.php">Home page of the chat</a>
+        </li>
+      </ul>
+      &nbsp;<br />
+      <div class="menuBox">
+        <dl>
+          <dt class="menuBoxTitle">&nbsp;More Info's</dt>
+          <dd>
+            <p>
+              <a href="http://www.albion.com/netiquette/">Netiquette</a>
+            </p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?=$_SESSION['translator']->get_language()?>">
+  <head>
+    <meta http-equiv="Content-type" content='<?=$_SESSION['template']->get_content_type()?>; charset="<?=$_SESSION['translator']->out('CHARACTER_ENCODING')?>"' />
+    <title>Title</title>
+    <link rel="stylesheet" href="<?=$_SESSION['template']->get_theme_path()?>/css/default.css" />
+    <script type="text/javascript">
+    /*<![CDATA[*/
+
+    /*/]]>*/
+    </script>
+  </head>
+  <body>
+    <div class="satContent">
+      <h1>Headline</h1>
+      <p>Content</p>
+      <div class="satContentBox">
+        <dl>
+          <dt class="contentBoxTitle">
+            &nbsp;Contentbox Headline
+          </dt>
+          <dd>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    Content of Contentbox.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="menu">
+    <div class="flagBox"><?=$TEMPLATE_OUT['lang_switch']?></div>
+      <ul>
+        <li>
+          <a href="index.php">Home page of the chat</a>
+        </li>
+      </ul>
+      &nbsp;<br />
+      <div class="menuBox">
+        <dl>
+          <dt class="menuBoxTitle">&nbsp;Menubox Headline</dt>
+          <dd>
+            <p>
+              Content of menubox.
+            </p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </body>
+</html>

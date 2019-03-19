@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Mail_Dispatcher</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Mail_Dispatcher</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Mail_Dispatcher sends and gets mail</p>
+	<ul class="tags">
+				<li><span class="field">version:</span> $Id: class.Mail_Dispatcher.inc,v 1.13 2003/03/04 17:49:14 letreo Exp $</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">author:</span> Michael Oertel &lt;<a href="mailto:michael@ortelius.de">michael@ortelius.de</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_include_class_Mail_Dispatcher_inc.html">Program_Root/include/class.Mail_Dispatcher.inc</a> (line <span class="field">40</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$connection_count" title="details" class="var-name">$connection_count</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Mail_Dispatcher" title="details" class="method-name">Mail_Dispatcher</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#check_mail" title="details" class="method-name">check_mail</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$mail</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#check_recipient" title="details" class="method-name">check_recipient</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$recipients</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#delete_mail" title="details" class="method-name">delete_mail</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sender</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$recipient</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$time</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#disconnect" title="details" class="method-name">disconnect</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#make_persistent" title="details" class="method-name">make_persistent</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$mail</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#send_mail" title="details" class="method-name">send_mail</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$mail</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#trash_mail" title="details" class="method-name">trash_mail</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$mail</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$mailbox</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$chatter</span>)
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$connection_count" id="$connection_count"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$connection_count</span>
+						(line <span class="line-number">54</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Mail_Dispatcher.html#methoddisconnect">Mail_Dispatcher::disconnect()</a></li>
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Mail_Dispatcher.html#methodconnect">Mail_Dispatcher::connect()</a></li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodMail_Dispatcher" id="Mail_Dispatcher"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor Mail_Dispatcher</span> (line <span class="line-number">56</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Mail_Dispatcher
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodcheck_mail" id="check_mail"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_mail</span> (line <span class="line-number">267</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks Mails</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			check_mail
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$mail</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$mail</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodcheck_recipient" id="check_recipient"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_recipient</span> (line <span class="line-number">174</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if given recipient exists</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			check_recipient
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$recipients</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$recipients</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">connect</span> (line <span class="line-number">68</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Connect to the database</p>
+<p class="description"><p>Establish a database connection</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			connect
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methoddelete_mail" id="delete_mail"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete_mail</span> (line <span class="line-number">257</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Deletes a mail</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			delete_mail
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sender</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$recipient</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$time</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sender</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$recipient</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$time</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methoddisconnect" id="disconnect"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">disconnect</span> (line <span class="line-number">93</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disconnect the database</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Mail_Dispatcher.html#methodconnect">Mail_Dispatcher::connect()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			disconnect
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodmake_persistent" id="make_persistent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">make_persistent</span> (line <span class="line-number">109</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates a Mail</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			make_persistent
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$mail</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$mail</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodsend_mail" id="send_mail"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">send_mail</span> (line <span class="line-number">136</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sends a Mail</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			send_mail
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$mail</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$mail</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodtrash_mail" id="trash_mail"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">trash_mail</span> (line <span class="line-number">203</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Moves a mail into trashbin</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			trash_mail
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$mail</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$mailbox</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$chatter</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$mail</span>			</li>
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$mailbox</span>			</li>
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$chatter</span>			</li>
+				</ul>
+		
+		
+	</div>
+						
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documention generated on Fri,  2 May 2003 10:50:47 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.2.0rc2</a>
+	</p>
+	</div></body>
+</html>

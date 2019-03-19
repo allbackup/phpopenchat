@@ -1,0 +1,127 @@
+- guest login count
+- 
+
+
+New Features:
+1.) file sharing, 
+2.) private messaging, 
+3.) Unlimited operators and smilies
+4.) system logging
+5.) themes
+6.) Allow to add/remove/change Room Topic
+7.) Addition of available commands:
+
+{} indicates a required option, [] indicates an optional 
+option.
+
+/about 
+   Display information about phpOpenchat and its 
+creators
+
+/afk , /away [ Message ]
+   Changes your mode to away from keyboard. You may 
+specify an optional away message.
+
+/block 
+   Blocks all private messages from any users.
+
+/bug , /suggest { Bug description }
+   Send a bug report.
+
+/clear 
+   Clears the current chat window.
+
+/deop { Username }
+   Remove a users operators status. This command can 
+only be used by administrators and operators.
+
+/global { Message }
+   Send a message to all users in all rooms. This 
+command can only be used by an administrator.
+
+/help , /? 
+   Displays this document.
+
+/ignore { Username }
+   Add a user to your ignore list. That user cannot send 
+you private messages and you can not see messages 
+they send. This command can only be used by 
+registered users.
+
+/kick { Username } [ Reason ]
+   Kick a user from the system. You may specify an 
+optional reason. This command can only be used by 
+administrators or operators.
+
+/lobby [ Message ]
+   Returns you to the lobby. You may specify an 
+optional exit message.
+
+/motd 
+   Displays the message of the day.
+
+/myfiles 
+   Displays your online files.
+
+/op { Username }
+   Give a user operator status. This command can only 
+be used by administrators and operators.
+
+/prefs , /options 
+   Displays your POC preferences.
+
+/print 
+   Displays your conversations in a printable window.
+
+/removebuddy { Username }
+   Removes a buddy from your buddy list. This 
+command can only be used by registered users.
+
+/roll 
+   Rolls the chat room dice. This is useful for online 
+gaming.
+
+/showbuddy 
+   Displays all users on your buddy list. This command 
+can only be used by registered users.
+
+/showignored 
+   Displays all users on your ignore list. This command 
+can only be used by registered users.
+
+/smiley 
+   Displays all available smiley faces.
+
+/topic { None }
+   Removes a user from your ignore list. This command 
+can only be used by registered users.
+
+/unafk , /back [ Message ]
+   Changes your mode to back from away from 
+keyboard. You may specify an optional back message.
+
+/unblock 
+   Allows you to accept private messages from all users 
+again.
+
+/unignore { Username }
+   Remove a user from your ignore list. That user can 
+now send you private messages and you can see 
+messages they send. This command can only be used 
+by registered users.
+
+/unregister 
+   Unregisters your username. This will make it available 
+for anyone to use. This command can only be used by 
+registered users.
+
+/upload 
+   Displays the file sharing interface. This command can 
+only be used by registered users.
+
+/url { URL }
+   Allows you to insert a URL into the chat.
+
+/whois , /info { Username }
+   Displays information about the specified user. This 
+command can only be used by registered users.

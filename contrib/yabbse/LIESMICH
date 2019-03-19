@@ -1,0 +1,61 @@
+Integration des POC in YabbSE
+
+Welche Änderungen müssen bei YabbSE gemacht werden um den POC zu integrieren?
+
+1) Übertrage die Datei chat.gif nach -> /path_to_forum/YaBBImages/
+2) Ändere folgende Angaben in der Datei poc.php
+
+$poc_doc_root  = '/phpopenchat'; // der ordnername der chat installation
+$poc_root_path = './../phpopenchat'; // der pfad aus dem forum zum chat
+
+Beispiel:
+Dein YabbSE ist im Ordner forum
+Dein Chat ist im Ordner chatb7
+dann müssen die Angaben wie folgt aussehen:
+
+$poc_doc_root  = '/chatb7';
+$poc_root_path = '../chatb7/';
+
+Übertrage die Datei poc.php, im Download im Ordner contrib/yabbse in das 
+Hauptverzeichnis des Forum.
+
+3) Baue den Link zum Chat in das Menü von YabbSE ein. Dies geht wie folgt:
+
+Öffne die Datei path_to_forum/Sources/Subs.php
+Suche nach:
+$yymenu .= "$menusep<a href=\"$cgi;action=shownotify\">$img[notification]</a>";
+
+Darunter füge ein:
+$yymenu .= "$menusep<a href=\"poc.php\"><img src=\"$imagesdir/chat.gif\" alt=\"Auf in den Chat\" width=\"45\" height=\"22\" border=\"0\"></a>";
+
+Der Chat Button ist somit nur für angemeldete User sichtbar,
+Gäste haben keinen Zugriff.
+
+Einstellungen in der Datei config.inc.php des POC:
+Beispiel 1: Du möchtest das nur registrierte User des Forum den Chat 
+            benutzen können und Gäste somit keinen Zugang haben.
+
+define('ALLOW_GUEST_LOGIN',false);
+define('SEND_CONFIRMATION_MAIL', false);
+define('AUTOLOGIN_DIRECTLY', true);
+
+Der Chat läuft nun nur über das Forum, eine Ausführung auch als Standalone 
+für User die nicht am Forum teilnehmen ist ausgeschlossen!
+
+Beispiel 2: Du möchtest das die Registrierten Teilnehmer des Forum in den 
+            Chat übernommen werden, trotzdem soll eine Registrierung 
+            für den Chat auch ohne Forum möglich sein und Gäste Zugang haben.
+
+define('ALLOW_GUEST_LOGIN',true);
+define('SEND_CONFIRMATION_MAIL', true); //kann auch auf false stehen wenn du nicht möchtest das die email adresse auf richtigkeit geprüft wird
+define('AUTOLOGIN_DIRECTLY', false);
+
+Der Chat ist in das Forum integriert, eine Nutzung als Standalone für User 
+die das Forum nicht nutzen möchten ist trotzdem möglich
+
+Weitere Informationen findest du auch in unserem Forum unter 
+http://www.phpopenchat.de/ -> Integration in ein Forum Ebenfalls ein MOD zur Anzeige 
+der Onlinechatter auf der Boardindex kannst du dir dort Downloaden.
+
+HTH
+POC-Suport-Team

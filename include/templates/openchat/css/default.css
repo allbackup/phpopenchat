@@ -1,0 +1,453 @@
+/*   ********************************************************************   **
+**   Copyright notice                                                       **
+**                                                                          **
+**   (c) 1995-2002 PHPOpenChat Development Team                             **
+**   http://phpopenchat.sourceforge.net/                                    **
+**                                                                          **
+**   All rights reserved                                                    **
+**                                                                          
+**   This script is part of the PHPOpenChat project. The PHPOpenChat        **
+**   project is free software; you can redistribute it and/or modify        **
+**   it under the terms of the GNU General Public License as published by   **
+**   the Free Software Foundation; either version 2 of the License, or      **
+**   (at your option) any later version.                                    **
+**                                                                          **
+**   The GNU General Public License can be found at                         **
+**   http://www.gnu.org/copyleft/gpl.html.                                  **
+**   A copy is found in the textfile GPL and important notices to the       **
+**   license from the team is found in the textfile LICENSE distributed     **
+**   with these scripts.                                                    **
+**                                                                          **
+**   This script is distributed in the hope that it will be useful,         **
+**   but WITHOUT ANY WARRANTY; without even the implied warranty of         **
+**   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          **
+**   GNU General Public License for more details.                           **
+**                                                                          **
+**   This copyright notice MUST APPEAR in all copies of the script!         **
+**   ********************************************************************   */
+
+/*
+  $Author: letreo $
+  $Date: 2004/03/04 17:44:18 $
+  $Source: /cvsroot/phpopenchat/chat3/include/templates/openchat/css/default.css,v $
+  $Revision: 1.16.2.5 $
+*/
+
+/* Generic settings */
+html,body
+{
+  height: 100%;
+}
+
+body,div,p,a,span,em,strong,th,td,li,h1,h2,h3
+{
+  font-size: 1em;
+  font-family: arial, helvetica, geneva, sans-serif;
+}
+
+body,.content,.satContent,.chatterCountField
+{
+  color: #000;
+  background-color: #fff;
+}
+
+body
+{
+  /* sizing and positioning */
+  margin: 0;
+  padding: 0;
+  
+  /* fancy scrollbars specially for our IE users :] */
+  scrollbar-face-color: #ccaa00;
+  scrollbar-track-color: #cccccc;
+  scrollbar-arrow-color: #660000;
+
+  scrollbar-highlight-color: #eeee44;
+  scrollbar-3dlight-color: #eeeeaa;
+  scrollbar-shadow-color: #eeaa22;
+  scrollbar-darkshadow-color: #ee6622;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+td,th
+{
+  text-align: left;
+  vertical-align: top;
+}
+
+fieldset
+{
+  margin-top: 10px;
+  border: 1px solid yellow;
+}
+
+.content,.satContent
+{
+  /* sizing and positioning */
+  float: left;
+  padding-left: 10%;
+  width: 60%;
+  height: 100%;
+}
+
+.satContent
+{ 
+  padding-left: 3%;
+}
+
+.menu
+{
+  color: #000;
+  background-color: #0a0; /* if you change this, you must also change div.menu a:link,visited */
+  border-left: 2px dotted black;
+  border-bottom: 2px dotted black;
+  
+  /* sizing and positioning */
+  margin-left: 70%; /* if you change this, you must also change .content (width, padding-left) */
+  padding-left: 10px;
+  height: 98%;
+}
+
+div.content h1, div.satContent h1
+{
+  color: #0a0;
+
+  /* sizing and positioning */
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+div.menu p{
+  font-size: 9px
+}
+div.menu h1
+{
+  color: #faf;
+
+  /* sizing and positioning */
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+div.menu li
+{
+  list-style-type: circle;
+  padding-left:0;
+}
+
+.contentBox, .satContentBox, .inputFilterBox
+{
+  background-color: #fc0;
+  border: 1px dotted black;
+  /*font-size: 9px;*/
+  
+  /* sizing and positioning */
+  padding: 5px;
+  margin-bottom: 12px;
+}
+div.inputFilterBox dd{ font-size: 9px }
+div.contentBox { 
+  width: 550px; 
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  width: 450px;
+} 
+html>body .contentBox {
+  width: 450px;
+}
+/*
+div.satContentBox { 
+  width: 490px;
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  width: 390px;
+}
+html>body .satContentBox {
+  width: 390px;
+}
+*/
+
+div.contentBox dd
+{
+  font-size: 9px;
+}
+
+.menuBox
+{
+  background-color: #5eba46;
+  border: 1px dotted black;
+  
+  /* sizing and positioning */
+  padding: 5pt;
+  width:93%;
+}
+div.menuBox dd
+{
+  margin: 0;
+  padding: 3pt;
+}
+div.menuBox td,th
+{
+  font-size: 9px;
+}
+
+div.flagBox
+{
+  padding-bottom: 5px;
+  text-align: left;
+  padding-right: 5px; 
+  margin-bottom: 10px;
+  line-height: 26px;
+}
+
+/* * * Titels * * */
+
+.contentBoxTitle, th.title
+{
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #fd0;
+}
+
+.menuBoxTitle
+{
+  font-weight: bold;
+  color: #fd0;
+  background-color: #007c00;
+}
+
+.menuBoxItemOdd
+{
+  background-color: #509f3b;
+}
+
+.menuBoxItemEven
+{
+  background-color: #59b042;
+}
+
+/* * * Link related * * */
+
+a{
+  line-height: 1.5;
+}
+
+.contentLink {
+  color: #000;
+  /*font-weight: bold;*/
+}
+
+div.menu li a
+{
+  font-size: 9px;
+}
+div.content div.contentBox a, div.satContent div.contentBox a
+{
+  background-color: #fc0;
+  font-size: 9px;
+}
+
+div.ccontent a:link, div.satContent a:link {
+  color: #009;
+  background: none #fc0;
+}
+
+div.ccontent a:visited, div.satContent a:visited {
+  color: #609;
+  background: none #fc0;
+}
+
+/*a:link.contentLink, a:visited.contentLink {background: none #fff;}*/
+
+div.content a:hover, div.satContent a:hover {
+  color: #080;
+  text-decoration: none;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+  background: none #fbf397; /* light yellow */
+}
+
+div.content a:active, div.satContent a:active, chatterCountField {
+  color: #900;
+  background: none #fff;
+}
+
+div.menu a:link {
+  color: #000;/*#009*/
+  background: none #0a0;
+}
+
+div.menuBox a:link
+{
+  background: none #5eba46;
+}
+
+div.menu a:visited {
+  color: #000;/*#609*/
+  background: none #0a0;
+}
+
+div.menu a:hover {
+  color: #ff0;
+  text-decoration: none;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+  background: none #1d1;
+}
+
+div.menu a:active {
+  color: #900;
+  background: none #0a0;
+}
+
+div.menu div.buttonBox a:hover,
+div.menu a.imageLink:hover,
+div.content a.imageLink:hover,
+div.satContent a.imageLink:hover,
+td.helpIcon a:hover
+{
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+/* * * Table related * * */
+
+th.formFieldLabel
+{
+  font-weight: normal;
+  font-style: italic;
+}
+
+td.helpIcon, td.helpIcon a:hover
+{
+  vertical-align: middle;
+  cursor: help;
+}
+td.helpIcon a:link, td.helpIcon a:link, td.helpIcon a:visited
+{
+  background: none;
+  cursor: help;
+}
+
+div.content div.contentBox td.chatterTable,
+div.satContent div.contentBox td.chatterTable
+{
+  vertical-align: middle;
+  /*font-size: 9px;*/
+  color: #000;
+  background-color: #fc0;
+  border-top: 1px solid yellow;
+  border-right: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+
+div.content div.contentBox td.chatterTableImgCell,
+div.satContent div.contentBox td.chatterTableImgCell
+{
+  vertical-align: middle;
+  /*width: 20px;*/
+  border-top: 1px solid yellow;
+  border-left: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+div.content div.contentBox td,
+div.satContent div.contentBox td,
+div.content div.satContentBox td,
+div.satContent div.satContentBox td,
+p
+{
+  font-size: 9px;
+}
+
+div.contentBox ul{
+ padding-left:15px;
+}
+div.menu ul{
+ padding-left:10px;
+ margin: 0;
+ margin-left: 3px;
+}
+
+td.filterboxItems
+{
+  font-size: 9px;
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  font-size: 9px;
+}
+
+/* * * Form related * * */
+
+.loginInput
+{
+  width: 130px;
+}
+.profileInput
+{
+  width: 160px;
+}
+.registerInput
+{
+  width: 230px;
+}
+
+div.contentBox input, div.contentBox select, div.contentBox textarea
+{ 
+  border: 1px solid brown;
+  background-color: #fffa96;
+}
+
+div.contentBox input.submit
+{
+  border: 2px solid brown;
+  background-color: #ffdd00;
+  font-style: italic;
+  font-weight: bold;
+  font-stretch: expanded;
+  /*width: 130pt;*/
+}
+
+dd select.selectbox,dd select.selectbox option, dd select.selectbox optgroup
+{
+  font-size:11px;
+  padding-left: 3px;
+}
+
+/* * * List related * * */
+
+dt {padding-left: 3pt}
+dl.help dt
+{
+  font-weight: bold;
+  background-color: #ff922d;
+  padding: 3pt;
+}
+dl.help dd
+{
+  margin-left: 6pt;
+  font-size: 9px;
+}
+
+/* * * Guestbook * * */
+.guestbookEntryTitle
+{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* * * Generic * * */
+.success
+{
+  color: #0a0;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.error
+{
+  color: #f00;
+  font-size: 10px;
+  font-weight: bold;
+}

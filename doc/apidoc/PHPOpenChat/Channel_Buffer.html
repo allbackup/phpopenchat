@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Channel_Buffer</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Channel_Buffer</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Channel buffer based on a database</p>
+	<ul class="tags">
+				<li><span class="field">version:</span> $Id: class.Channel_Buffer_DB.inc,v 1.46 2003/04/02 17:39:28 letreo Exp $</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">author:</span> Michael Oertel &lt;<a href="mailto:michael@ortelius.de">michael@ortelius.de</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_include_class_Channel_Buffer_DB_inc.html">Program_Root/include/class.Channel_Buffer_DB.inc</a> (line <span class="field">53</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$channel" title="details" class="var-name">$channel</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$connection_count" title="details" class="var-name">$connection_count</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$cur_line_idx" title="details" class="var-name">$cur_line_idx</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$locked" title="details" class="var-name">$locked</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$max_line_idx" title="details" class="var-name">$max_line_idx</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Channel_Buffer" title="details" class="method-name">Channel_Buffer</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#destroy" title="details" class="method-name">destroy</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#disconnect" title="details" class="method-name">disconnect</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_cur_line" title="details" class="method-name">get_cur_line</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_cur_line_idx" title="details" class="method-name">get_cur_line_idx</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_lines_since" title="details" class="method-name">get_lines_since</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$since_idx</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#get_max_line_idx" title="details" class="method-name">get_max_line_idx</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_name" title="details" class="method-name">get_name</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#init" title="details" class="method-name">init</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#lock" title="details" class="method-name">lock</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#put_line" title="details" class="method-name">put_line</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$line</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_max_line_idx" title="details" class="method-name">set_max_line_idx</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$max_line_idx</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#test" title="details" class="method-name">test</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#unlock" title="details" class="method-name">unlock</a>
+										()
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$channel" id="$channel"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$channel</span>
+						(line <span class="line-number">60</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Channel_Buffer.html#methodChannel_Buffer">Channel_Buffer::Channel_Buffer()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$connection_count" id="$connection_count"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$connection_count</span>
+						(line <span class="line-number">104</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Channel_Buffer.html#methoddisconnect">Channel_Buffer::disconnect()</a></li>
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Channel_Buffer.html#methodconnect">Channel_Buffer::connect()</a></li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$cur_line_idx" id="$cur_line_idx"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$cur_line_idx</span>
+						(line <span class="line-number">76</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Channel_Buffer.html#methodget_lines_since">Channel_Buffer::get_lines_since()</a></li>
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Channel_Buffer.html#methodChannel_Buffer">Channel_Buffer::Channel_Buffer()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$locked" id="$locked"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$locked</span>
+			 = <span class="var-default">false</span>			(line <span class="line-number">134</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$max_line_idx" id="$max_line_idx"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$max_line_idx</span>
+						(line <span class="line-number">68</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Channel_Buffer.html#methodget_lines_since">Channel_Buffer::get_lines_since()</a></li>
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Channel_Buffer.html#methodChannel_Buffer">Channel_Buffer::Channel_Buffer()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodChannel_Buffer" id="Channel_Buffer"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor Channel_Buffer</span> (line <span class="line-number">144</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor.</p>
+<p class="description"><p>create a new channel buffer object with name 'channel'</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Channel_Buffer
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span><span class="var-description">: channel name</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">connect</span> (line <span class="line-number">367</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Connect to the database</p>
+<p class="description"><p>Establish a database connection</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			connect
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methoddestroy" id="destroy"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">destroy</span> (line <span class="line-number">349</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Destroys the channel buffer in database.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Channel_Buffer.html#methodinit">Channel_Buffer::init()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			destroy
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methoddisconnect" id="disconnect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">disconnect</span> (line <span class="line-number">395</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disconnect the database</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Channel_Buffer.html#methodconnect">Channel_Buffer::connect()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			disconnect
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_cur_line" id="get_cur_line"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_cur_line</span> (line <span class="line-number">226</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get content of current chat line.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_cur_line
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_cur_line_idx" id="get_cur_line_idx"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_cur_line_idx</span> (line <span class="line-number">202</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get var cur_line_idx.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_cur_line_idx
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_lines_since" id="get_lines_since"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_lines_since</span> (line <span class="line-number">413</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the chat lines since a given line index</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_lines_since
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$since_idx</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$since_idx</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodget_max_line_idx" id="get_max_line_idx"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_max_line_idx</span> (line <span class="line-number">159</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get var max_line_idx.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> $max_line_idx of buffer</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_max_line_idx
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_name" id="get_name"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_name</span> (line <span class="line-number">216</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get channel name.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_name
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodinit" id="init"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">init</span> (line <span class="line-number">243</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initialize the channel buffer in database.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			init
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodlock" id="lock"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">lock</span> (line <span class="line-number">273</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set a lock to block all other threads.</p>
+<p class="description"><p>Creates and sets a lock on a dummy file to perform a simple reader/writer model</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Channel_Buffer.html#methodunlock">Channel_Buffer::unlock()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			lock
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodput_line" id="put_line"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">put_line</span> (line <span class="line-number">456</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Writes chat lines into the buffer</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			put_line
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$line</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$line</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_max_line_idx" id="set_max_line_idx"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_max_line_idx</span> (line <span class="line-number">176</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set var max_line_idx.</p>
+<p class="description"><p>It is only a dummy. To change the size of the line buffer, simply add another column like 'line_27'</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_max_line_idx
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$max_line_idx</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$max_line_idx</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodtest" id="test"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">test</span> (line <span class="line-number">501</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">test class Channel_Buffer</p>
+<p class="description"><p>call like: Channel_Buffer::test();</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			test
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodunlock" id="unlock"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">unlock</span> (line <span class="line-number">325</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unlock the dummy file.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Channel_Buffer.html#methodlock">Channel_Buffer::lock()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			unlock
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+						
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documention generated on Fri,  2 May 2003 10:50:41 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.2.0rc2</a>
+	</p>
+	</div></body>
+</html>

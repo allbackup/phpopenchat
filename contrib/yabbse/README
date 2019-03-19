@@ -1,0 +1,59 @@
+Integration of the PHPOpenChat (POC) into YabbSE
+
+What I have to do to integrade the POC into my YaBBSE-installation?
+
+1) Upload the image file 'button_poc.gif' to -> /path_to_forum/YaBBImages/
+2) Setup the following properties within the file 'poc.php'
+
+$poc_doc_root  = '/phpopenchat'; // directory name of your POC installation
+$poc_root_path = './../phpopenchat'; // the relative path from YaBBSE installation to POC installation
+
+Example:
+you have YaBBSE in the directory 'forum' and 
+your POC in the directory chatb7 already installed.
+In this case, your setup must look like as follows:
+
+$poc_doc_root  = '/chatb7';
+$poc_root_path = '../chatb7/';
+
+Upload the file 'contrib/yabbse/poc.php' into the yabbse install directory
+
+3) Adaptation of YaBBSE's menu. Go on as follows:
+
+edit the file 'path_to_forum/Sources/Subs.php'
+search for:
+$yymenu .= "$menusep<a href=\"$cgi;action=shownotify\">$img[notification]</a>";
+
+Insert the following code below this line:
+$yymenu .= "$menusep<a href=\"poc.php\"><img src=\"$imagesdir/chat.gif\" alt=\"Let's go into the chat!\" width=\"45\" height=\"22\" border=\"0\"></a>";
+
+Now a chat-button is available for registered member. Guests doesn't get
+access to the chat.
+
+Some relevant properties of POC's 'config.inc.php':
+Example 1: You want that only registered users of yabbse can access the chat.
+Guests must register to be able to chat.
+
+define('ALLOW_GUEST_LOGIN',false);
+define('SEND_CONFIRMATION_MAIL', false);
+define('AUTOLOGIN_DIRECTLY', true);
+
+okay, users can login to the chat only if they are registered user of yabbse.
+
+Beispiel 2: You want that
+            - yabbse's registered users are able to chat,
+            - users are able to register for the chat only
+            - guests can access the chat without a yabbse membership.
+
+define('ALLOW_GUEST_LOGIN',true);
+define('SEND_CONFIRMATION_MAIL', true); //switch to false if you don't like registration mails.
+define('AUTOLOGIN_DIRECTLY', false);
+
+With this setup, the POC is successfully integrated into yabbse. 
+Users are able to use the chat without registring to the yabbse forum.
+Also guest-access is anabled.
+
+For more informations see the support-forum at http://www.phpopenchat.de/
+
+HTH
+POC-Support-Team

@@ -1,0 +1,2237 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Chat</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Chat</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Chat describes the whole chat</p>
+	<ul class="tags">
+				<li><span class="field">version:</span> $Id: class.Chat.inc,v 1.70 2003/04/28 16:21:55 letreo Exp $</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">author:</span> Michael Oertel &lt;<a href="mailto:michael@ortelius.de">michael@ortelius.de</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_include_class_Chat_inc.html">Program_Root/include/class.Chat.inc</a> (line <span class="field">48</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">integer</span>
+					<a href="#$connection_count" title="details" class="var-name">$connection_count</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$deathless_chatters" title="details" class="var-name">$deathless_chatters</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$language" title="details" class="var-name">$language</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$name" title="details" class="var-name">$name</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$referer" title="details" class="var-name">$referer</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$restrict" title="details" class="var-name">$restrict</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$show_profile" title="details" class="var-name">$show_profile</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$supported_languages" title="details" class="var-name">$supported_languages</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#Chat" title="details" class="method-name">Chat</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">CHAT_NAME</span>], <span class="var-type">mixed</span>&nbsp;<span class="var-name">$supported_languages</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#channel_exists" title="details" class="method-name">channel_exists</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#check_URL" title="details" class="method-name">check_URL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$checkIMG</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#confirm" title="details" class="method-name">confirm</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$code</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#create_channel" title="details" class="method-name">create_channel</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$passwd</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$message</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#create_private_channel" title="details" class="method-name">create_private_channel</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel_name</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#delete_channel" title="details" class="method-name">delete_channel</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel_name</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#disconnect" title="details" class="method-name">disconnect</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_best_chatter" title="details" class="method-name">get_best_chatter</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$grade</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$limit</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_channels" title="details" class="method-name">get_channels</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_channels_option_list" title="details" class="method-name">get_channels_option_list</a>
+											([<span class="var-type">int</span>&nbsp;<span class="var-name">$current_channel</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_channel_chatters" title="details" class="method-name">get_channel_chatters</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_channel_chatters_option_list" title="details" class="method-name">get_channel_chatters_option_list</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_channel_of" title="details" class="method-name">get_channel_of</a>
+											(<span class="var-type">string;</span>&nbsp;<span class="var-name">$nickname</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_chatters" title="details" class="method-name">get_chatters</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$channel</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$search_query</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_chatters_excepting" title="details" class="method-name">get_chatters_excepting</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$chatters_to_skip</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$as_option_list</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_chatter_count" title="details" class="method-name">get_chatter_count</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#get_chatter_instance" title="details" class="method-name">get_chatter_instance</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nick</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_default_language" title="details" class="method-name">get_default_language</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_friends_option_list" title="details" class="method-name">get_friends_option_list</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_grade_icon" title="details" class="method-name">get_grade_icon</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$nick</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_guests_option_list" title="details" class="method-name">get_guests_option_list</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_language" title="details" class="method-name">get_language</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_lang_switch" title="details" class="method-name">get_lang_switch</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_last_registered" title="details" class="method-name">get_last_registered</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#get_mail_count" title="details" class="method-name">get_mail_count</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#get_mail_count_last_24h" title="details" class="method-name">get_mail_count_last_24h</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_note_for" title="details" class="method-name">get_note_for</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$nickname</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_online_chatter" title="details" class="method-name">get_online_chatter</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_online_chatters_list" title="details" class="method-name">get_online_chatters_list</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$unix_timestamp</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#get_online_count" title="details" class="method-name">get_online_count</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#get_online_count_last24h" title="details" class="method-name">get_online_count_last24h</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">double</span>
+										<a href="#get_online_time_avg" title="details" class="method-name">get_online_time_avg</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_private_channels" title="details" class="method-name">get_private_channels</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_private_channels_option_list" title="details" class="method-name">get_private_channels_option_list</a>
+											([<span class="var-type">int</span>&nbsp;<span class="var-name">$current_channel</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_referer" title="details" class="method-name">get_referer</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#get_registered_count" title="details" class="method-name">get_registered_count</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#get_show_profile" title="details" class="method-name">get_show_profile</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_template" title="details" class="method-name">get_template</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$template</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$inline</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_template_from_cache" title="details" class="method-name">get_template_from_cache</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$cacheId</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_unignored_chatters_option_list" title="details" class="method-name">get_unignored_chatters_option_list</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$nick_constraint</span> = <span class="var-default">''</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#http_post" title="details" class="method-name">http_post</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$port</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$url</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$vars</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#init_channel_buffers" title="details" class="method-name">init_channel_buffers</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#is_online" title="details" class="method-name">is_online</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nick</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#logout" title="details" class="method-name">logout</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#make_clean" title="details" class="method-name">make_clean</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#mkinstance_channel" title="details" class="method-name">mkinstance_channel</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$post_channel</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#mkinstance_chatter" title="details" class="method-name">mkinstance_chatter</a>
+											(<span class="var-type">string;</span>&nbsp;<span class="var-name">$post_nickname</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$force</span> = <span class="var-default">false</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#move_channel_to_top" title="details" class="method-name">move_channel_to_top</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$channel</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#put_template_into_cache" title="details" class="method-name">put_template_into_cache</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$cacheId</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$period</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_deathless_chatters" title="details" class="method-name">set_deathless_chatters</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$deathless_chatters</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_language" title="details" class="method-name">set_language</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$primary_lang_prefix</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_nick_restrict" title="details" class="method-name">set_nick_restrict</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$restrict</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_note_for" title="details" class="method-name">set_note_for</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$nickname</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$note</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_operator_passwd" title="details" class="method-name">set_operator_passwd</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_referer" title="details" class="method-name">set_referer</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$referer</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_show_profile" title="details" class="method-name">set_show_profile</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#test" title="details" class="method-name">test</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#update_channel" title="details" class="method-name">update_channel</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$passwd</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$message</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#write_sys_msg" title="details" class="method-name">write_sys_msg</a>
+											(<span class="var-type">string;</span>&nbsp;<span class="var-name">$message</span>, <span class="var-type">object;</span>&nbsp;<span class="var-name">$recipient</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$whispered</span> = <span class="var-default">false</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_check_flag" title="details" class="method-name">_check_flag</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$lang</span>)
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$connection_count" id="$connection_count"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">integer</span>
+			<span class="var-name">$connection_count</span>
+						(line <span class="line-number">62</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Chat.html#methoddisconnect">Chat::disconnect()</a></li>
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Chat.html#methodconnect">Chat::connect()</a></li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$deathless_chatters" id="$deathless_chatters"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$deathless_chatters</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">92</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">nicknames which will never die</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$language" id="$language"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$language</span>
+						(line <span class="line-number">68</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Interface language of chat</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$name" id="$name"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$name</span>
+						(line <span class="line-number">55</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Chat.html#methodChat">Chat::Chat()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$referer" id="$referer"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$referer</span>
+						(line <span class="line-number">80</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">referer</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$restrict" id="$restrict"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$restrict</span>
+						(line <span class="line-number">74</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">search string for nicknames</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$show_profile" id="$show_profile"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$show_profile</span>
+			 = <span class="var-default">true</span>			(line <span class="line-number">86</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">show profile flag</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$supported_languages" id="$supported_languages"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$supported_languages</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">98</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">all supported languages</p>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodChat" id="Chat"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor Chat</span> (line <span class="line-number">108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor.</p>
+<p class="description"><p>create a new chat object</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			Chat
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">CHAT_NAME</span>], <span class="var-type">mixed</span>&nbsp;<span class="var-name">$supported_languages</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodchannel_exists" id="channel_exists"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">channel_exists</span> (line <span class="line-number">762</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if given channel name exists</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			channel_exists
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodcheck_URL" id="check_URL"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_URL</span> (line <span class="line-number">1153</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if an URL exists</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			check_URL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$checkIMG</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodconfirm" id="confirm"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">confirm</span> (line <span class="line-number">360</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the confirm code to null</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			confirm
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$code</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$code</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">connect</span> (line <span class="line-number">256</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Connect to the database</p>
+<p class="description"><p>Establish a database connection</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			connect
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodcreate_channel" id="create_channel"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">create_channel</span> (line <span class="line-number">447</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates a channel (default, moderated)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			create_channel
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$passwd</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$message</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$type</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodcreate_private_channel" id="create_private_channel"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">create_private_channel</span> (line <span class="line-number">412</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates a private channel</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			create_private_channel
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel_name</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methoddelete_channel" id="delete_channel"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete_channel</span> (line <span class="line-number">515</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Deletes a channel</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			delete_channel
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel_name</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methoddisconnect" id="disconnect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">disconnect</span> (line <span class="line-number">342</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disconnect the database</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Chat.html#methodconnect">Chat::connect()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			disconnect
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_best_chatter" id="get_best_chatter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_best_chatter</span> (line <span class="line-number">1065</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_best_chatter
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$grade</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$limit</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_channels" id="get_channels"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_channels</span> (line <span class="line-number">732</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all the channels</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_channels
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_channels_option_list" id="get_channels_option_list"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_channels_option_list</span> (line <span class="line-number">587</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all the channels as an option list specially for select boxes in the chat</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_channels_option_list
+		</span>
+					([<span class="var-type">int</span>&nbsp;<span class="var-name">$current_channel</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$current_channel</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodget_channel_chatters" id="get_channel_chatters"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_channel_chatters</span> (line <span class="line-number">819</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all chatters in given channel</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_channel_chatters
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span><span class="var-description">: name of channel</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodget_channel_chatters_option_list" id="get_channel_chatters_option_list"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_channel_chatters_option_list</span> (line <span class="line-number">867</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all chatters in given channel as an option list</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_channel_chatters_option_list
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span><span class="var-description">: name of channel</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodget_channel_of" id="get_channel_of"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_channel_of</span> (line <span class="line-number">1402</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the channel of given chatter</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_channel_of
+		</span>
+					(<span class="var-type">string;</span>&nbsp;<span class="var-name">$nickname</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string;</span>
+				<span class="var-name">$nickname</span><span class="var-description">: nickname of a chatter</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodget_chatters" id="get_chatters"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_chatters</span> (line <span class="line-number">1114</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all chatters</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_chatters
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$channel</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$search_query</span> = <span class="var-default">''</span>])
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_chatters_excepting" id="get_chatters_excepting"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_chatters_excepting</span> (line <span class="line-number">1035</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides an array of chatters</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_chatters_excepting
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$chatters_to_skip</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$as_option_list</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$chatters_to_skip</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$as_option_list</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodget_chatter_count" id="get_chatter_count"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_chatter_count</span> (line <span class="line-number">846</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the count of chatters in given channel</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_chatter_count
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span><span class="var-description">: name of channel</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodget_chatter_instance" id="get_chatter_instance"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_chatter_instance</span> (line <span class="line-number">1089</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides a chatter instance if exists</p>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			get_chatter_instance
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nick</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nick</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodget_default_language" id="get_default_language"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_default_language</span> (line <span class="line-number">145</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the default language of the chat</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_default_language
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_friends_option_list" id="get_friends_option_list"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_friends_option_list</span> (line <span class="line-number">939</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all friends in given channel as an option list</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_friends_option_list
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span><span class="var-description">: name of channel</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodget_grade_icon" id="get_grade_icon"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_grade_icon</span> (line <span class="line-number">1596</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_grade_icon
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$nick</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_guests_option_list" id="get_guests_option_list"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_guests_option_list</span> (line <span class="line-number">970</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all guests in given channel as an option list</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_guests_option_list
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_language" id="get_language"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_language</span> (line <span class="line-number">134</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets language of the chat</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> interface language of chat</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_language
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_lang_switch" id="get_lang_switch"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_lang_switch</span> (line <span class="line-number">160</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_lang_switch
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_last_registered" id="get_last_registered"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_last_registered</span> (line <span class="line-number">1524</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the count of registered chatters<br /></p>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_last_registered
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_mail_count" id="get_mail_count"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_mail_count</span> (line <span class="line-number">1489</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the count of mails in the DB<br /></p>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			get_mail_count
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_mail_count_last_24h" id="get_mail_count_last_24h"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_mail_count_last_24h</span> (line <span class="line-number">1506</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the count of mails in the DB from the last 24h<br /></p>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			get_mail_count_last_24h
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_note_for" id="get_note_for"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_note_for</span> (line <span class="line-number">1541</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides a note about a given chatter<br /></p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_note_for
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$nickname</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_online_chatter" id="get_online_chatter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_online_chatter</span> (line <span class="line-number">1381</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides a list of online chatters<br /></p>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_online_chatter
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_online_chatters_list" id="get_online_chatters_list"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_online_chatters_list</span> (line <span class="line-number">1356</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets a list of chatters online in fromat:<br /> (nickname)(unixtimestamp)(channel)\n</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_online_chatters_list
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$unix_timestamp</span> = <span class="var-default">true</span>])
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_online_count" id="get_online_count"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_online_count</span> (line <span class="line-number">1416</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the count of online chatters<br /></p>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			get_online_count
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_online_count_last24h" id="get_online_count_last24h"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_online_count_last24h</span> (line <span class="line-number">1435</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the count of chatters online in the last 24h<br /></p>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			get_online_count_last24h
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_online_time_avg" id="get_online_time_avg"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_online_time_avg</span> (line <span class="line-number">1455</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the avg.</p>
+<p class="description"><p>of online time per chatter in seconds per day<br /></p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">double</span>
+		<span class="method-name">
+			get_online_time_avg
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_private_channels" id="get_private_channels"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_private_channels</span> (line <span class="line-number">780</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all private channels</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_private_channels
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_private_channels_option_list" id="get_private_channels_option_list"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_private_channels_option_list</span> (line <span class="line-number">700</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all private channels as an option list specially for select boxes in the chat</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_private_channels_option_list
+		</span>
+					([<span class="var-type">int</span>&nbsp;<span class="var-name">$current_channel</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$current_channel</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodget_referer" id="get_referer"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_referer</span> (line <span class="line-number">199</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets referer</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_referer
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_registered_count" id="get_registered_count"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_registered_count</span> (line <span class="line-number">1472</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the count of registered chatters<br /></p>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			get_registered_count
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_show_profile" id="get_show_profile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_show_profile</span> (line <span class="line-number">232</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides the show profile flag</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			get_show_profile
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_template" id="get_template"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_template</span> (line <span class="line-number">1196</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns a parsed template</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_template
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$template</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$inline</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$template</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodget_template_from_cache" id="get_template_from_cache"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_template_from_cache</span> (line <span class="line-number">1635</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_template_from_cache
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$cacheId</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodget_unignored_chatters_option_list" id="get_unignored_chatters_option_list"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_unignored_chatters_option_list</span> (line <span class="line-number">998</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all chatters in given channel as an option list of unignored users of current chatter</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_unignored_chatters_option_list
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$channel</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$nick_constraint</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$channel</span><span class="var-description">: nickname</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nick_constraint</span><span class="var-description">: name of channel</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodhttp_post" id="http_post"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">http_post</span> (line <span class="line-number">1663</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Method to perform an HTTP POST to a web page from a PHP script.</p>
+<p class="description"><p>Example: http_post( &quot;www.foo.com&quot;, 80, &quot;/check.php&quot;, array(&quot;name&quot; =&gt; &quot;foo&quot;, &quot;age&quot; =&gt; &quot;20&quot;) );</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> &lt;<a href="mailto:nf@bigpond.net.au">nf@bigpond.net.au</a>&gt;  <a href="http://nf.wh3rd.net/">http://nf.wh3rd.net/</a></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			http_post
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$port</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$url</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$vars</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$server</span><span class="var-description">: server to post to</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$port</span><span class="var-description">: server post, mostly port 80</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodinit_channel_buffers" id="init_channel_buffers"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">init_channel_buffers</span> (line <span class="line-number">546</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">initialisation of channel_buffers</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Chat.html#methodcreate_private_channel">Chat::create_private_channel()</a></li>
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Chat.html#methodcreate_channel">Chat::create_channel()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			init_channel_buffers
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodis_online" id="is_online"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_online</span> (line <span class="line-number">801</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if a given nickname is online</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../PHPOpenChat/Chatter.html#methodis_online">Chatter::is_online()</a></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			is_online
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nick</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nick</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodlogout" id="logout"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">logout</span> (line <span class="line-number">1217</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Logout a chatter</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			logout
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodmake_clean" id="make_clean"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">make_clean</span> (line <span class="line-number">1279</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Cleans up online status of chatters</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			make_clean
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodmkinstance_channel" id="mkinstance_channel"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">mkinstance_channel</span> (line <span class="line-number">279</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates a new instance of class channel within session</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			mkinstance_channel
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$post_channel</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodmkinstance_chatter" id="mkinstance_chatter"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">mkinstance_chatter</span> (line <span class="line-number">295</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates a new instance of class chatter</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			mkinstance_chatter
+		</span>
+					(<span class="var-type">string;</span>&nbsp;<span class="var-name">$post_nickname</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$force</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string;</span>
+				<span class="var-name">$post_nickname</span><span class="var-description">: a nickname of a chatter</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodmove_channel_to_top" id="move_channel_to_top"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">move_channel_to_top</span> (line <span class="line-number">562</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			move_channel_to_top
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$channel</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodput_template_into_cache" id="put_template_into_cache"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">put_template_into_cache</span> (line <span class="line-number">1609</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			put_template_into_cache
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$cacheId</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$period</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodset_deathless_chatters" id="set_deathless_chatters"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_deathless_chatters</span> (line <span class="line-number">243</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets dethless chatters</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_deathless_chatters
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$deathless_chatters</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$deathless_chatters</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_language" id="set_language"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_language</span> (line <span class="line-number">188</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets primary language prefix of the chat</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_language
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$primary_lang_prefix</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$primary_lang_prefix</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_nick_restrict" id="set_nick_restrict"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_nick_restrict</span> (line <span class="line-number">1021</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_nick_restrict
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$restrict</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodset_note_for" id="set_note_for"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_note_for</span> (line <span class="line-number">1553</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_note_for
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$nickname</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$note</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodset_operator_passwd" id="set_operator_passwd"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_operator_passwd</span> (line <span class="line-number">378</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_operator_passwd
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodset_referer" id="set_referer"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_referer</span> (line <span class="line-number">210</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets referer</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_referer
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$referer</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$referer</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset_show_profile" id="set_show_profile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_show_profile</span> (line <span class="line-number">221</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the show profile flag</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_show_profile
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$bool</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodtest" id="test"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">test</span> (line <span class="line-number">1705</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Test class Chat</p>
+<p class="description"><p>call like: Chat::test();</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			test
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodupdate_channel" id="update_channel"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">update_channel</span> (line <span class="line-number">483</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates a channel (default, moderated)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			update_channel
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$passwd</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$message</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$type</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodwrite_sys_msg" id="write_sys_msg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">write_sys_msg</span> (line <span class="line-number">310</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Writes a message from the system-bot to given recipient</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			write_sys_msg
+		</span>
+					(<span class="var-type">string;</span>&nbsp;<span class="var-name">$message</span>, <span class="var-type">object;</span>&nbsp;<span class="var-name">$recipient</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$whispered</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string;</span>
+				<span class="var-name">$message</span><span class="var-description">: message to write</span>			</li>
+					<li>
+				<span class="var-type">object;</span>
+				<span class="var-name">$recipient</span><span class="var-description">: recipient</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="method_check_flag" id="_check_flag"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_check_flag</span> (line <span class="line-number">150</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_check_flag
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$lang</span>)
+			</div>
+	
+		
+		
+	</div>
+						
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documention generated on Fri,  2 May 2003 10:50:42 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.2.0rc2</a>
+	</p>
+	</div></body>
+</html>

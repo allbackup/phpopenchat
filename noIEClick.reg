@@ -1,0 +1,11 @@
+REGEDIT4
+;In particular, RegEdit will pretty much accept anything as long as it starts
+;with REGEDITx, and ignore anything erroneous. Yes, that does add up to the
+;Microsoft Stupid Mistakes list.
+
+;Michael Oertel, michael.oertel@pixelpark.com
+;inital revison, 23.07.2001
+
+
+[HKEY_CURRENT_USER\AppEvents\Schemes\Apps\Explorer\Navigating\.current]
+@=""

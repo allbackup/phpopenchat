@@ -1,0 +1,97 @@
+PHPOpenChat v3.0.0 - INSTALL
+These are installation instructions for the impatient.
+
+$Id: INSTALL,v 1.5.2.4 2004/05/08 18:49:46 letreo Exp $
+
+!!!NOTE!!!
+If you get bored by the length and content of this helpful file,
+start the POC-Installer by using the following URL!
+http://your.domain.tld/phpopenchat/install.php
+
+Overview
+
+0. Preface
+1. Unpack the archive (already done if you can read this)
+2. Check requirements and prerequisites
+3. Copy files to destination host and directory
+4. Create database and database user with access rights
+5. Change configuration settings in config.inc
+6. Run 'test.php' in a browser. If this is successful proceed, if not check all of above
+7. Change configuration settings of Apache webserver in httpd.conf and PHP in php.ini
+8. Open startpage with your browser
+9. Register your nick name
+10. Login with your nick name
+11. Send an email with the URL of your chat system to michael@ortelius.de, thank you very much.
+12. Integration into other php-based applications
+
+0. Preface
+
+PHPOpenChat (POC) is a web-based chat system written in PHP 4 as Open Source Software (OSS). Your advantage is that you may use it without charge even for commercial purposes. Your disadvantage is that you have no [anspruch] for support or fulfillement of any requirements although some volunteers might give you support and some functionality may be provided.
+To operate the chat system you won't need any commercial software packages, although it might run with one of these too. Instead it is sufficient to have Linux, Apache, PHP 4 and MySQL (LAMP) and of course a server computer attached to the internet (or any kind of TCP/IP network).
+
+1. Unpack the archive
+
+PHPOpenChat comes as a TAR-Archive oder ZIP-Archive. It will unpack itself into a subdirectory "phpopenchat". Please unpack it in your DOCROOT directory.
+We assume you have a HOME directory and a document root directory DOCROOT. DOCROOT is the directory where all files of your web server are stored. In the case of an Apache web server DOCROOT is often named 'htdocs'. It may but doesn't have to be under your HOME directory.
+Example:
+
+Document Root is under
+/home/you/public_html
+or
+/var/www/html
+
+PHPOpenChat is should be unpacked to
+/home/you/public_html/phpopenchat
+or
+/var/www/html/phpopenchat
+
+2. Check requirements and prerequisites
+Do you have:
+- PHP >= 4.2.2 with MySQL-, or other DB-support
+- MySQL (or other DB)
+installed?
+
+3. Copy files to destination host and directory
+Hopefully done.
+
+4. Create database and database user with access rights
+Now you have to setup your database.
+- create a database (In other cases than mysql, it may be called 'tablespace')
+- create a database user with access rights to this database
+- import PHPOpenChat's database-schema db.schema
+
+5. Change configuration settings in config.inc
+For a quickstart it's enoght to change the following settings:
+- the hostname, where the database runs
+  define('DATABASE_HOST','localhost');
+- the database user with proper access rights
+  define('DATABASE_USER','');
+- the password of this database user
+  define('DATABASE_PASSWORD','');
+- the name of your created database which will contain your sql-tables (In other cases than mysql, it may be called 'tablespace')
+  define('DATABASE_TABLESPACE','');
+
+6. Run 'test.php' in a browser. If this is successful proceed, if not check all of above
+This test script tests:
+- database account settings
+- phpopenchat's database schema
+- template directory
+- webserver write access in tmp-directory
+- webserver write access in the directory, where POC tries to store user icons
+
+7. Change configuration settings of Apache webserver in httpd.conf and PHP in php.ini
+Increase the automatic time-out in /etc/php.ini. If you don't do this, people will be "logged out" of their sessions after ~24 minutes. 
+session.gc_maxlifetime = 86400
+
+8. Open startpage with your browser
+9. Register your nick name
+10. Login with your nick name
+11. Send an email with the URL of your chat system to michael@ortelius.de, thank you very much.
+Or/and goto "http://www.phpopenchat.de/pocportal/html/modules.php?op=modload&name=Web_Links&file=index"
+post a link to your new chat.
+
+12. Integration into other php-based applications
+Within the contrib subdirectory you can find script to integrate your POC installation into phpbb and yabbse.
+
+Now you are able to try http://your.host.tld/phpopenchat/
+have fun!

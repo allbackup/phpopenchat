@@ -1,0 +1,198 @@
+Integration des POC in phpNUKE (>=6.5)
+
+Welche Änderungen müssen bei phpNUKE gemacht werden um den POC zu integrieren?
+
+
+1) Lade die Datei "buton_poc.gif" in Dein phpNuke/images Verzeichnis hoch.
+2) Ändere folgende Angaben in der Datei poc.php
+
+$poc_doc_root  = '/phpopenchat'; // der ordnername der chat installation
+$poc_root_path = './../phpopenchat'; // der pfad aus nuke zum chat
+
+
+Beispiel:
+Dein Chat ist im Ordner chatb7
+Nuke & Chat sind im selben Stammordner..
+
+dann müssen die Angaben wie folgt aussehen:
+
+$poc_doc_root  = '/chatb7';
+$poc_root_path = '../chatb7/';
+
+Wenn die phpnuke und poc ordner nicht im selben verzeichnis liegen,
+musst du die Pfade entsprechend anpassen.. :)
+ 
+
+Datenbankeinstellungen:
+
+$dbhost = "localhost";         // 'localhost' or 'www.yoursiteurl.com' if on a remote site
+$dbuser = "root";           // username
+$dbpwd = "";            // password
+$dbname = "";       // the name of your database
+
+
+Scripteinstellungen:
+
+$deftheme = 'openchat'; // POC default Theme -- POC Standard Theme
+$siteurl = 'http://www.yourdomain.tld'; // Deine Domain URL -- Your Domain URL -- without ending  "/"
+$nuke_prefix = 'nuke_'; // Prefix of phpnuke tables // Prefix der PHPnuke Tabellen.. Meist "nuke_"
+$nukeordner = '/'; 
+
+ Der Ordnername in dem phpnuke ist
+ Wenn phpnuke in keinem seperaten Ordner liegt, sondern im Stammverzeichnis, lösche das "/".
+
+
+ACHTUNG! 
+
+Gäste bekommen derzeit auch einen Button angezeigt, der zur registrierung führt.
+Diese wird in meinem Nuke über das phpBB Forum abgewickelt!
+
+Wenn Du KEINEN Gast Login wünschst, ersetze die Meldung, die ausgegeben wird, entsprechend..
+
+=====================================
+Finde 
+=====================================
+
+echo"<table class='fonts' width='100%' border='0' cellspacing='0' cellpadding='0'>
+  <tr>
+    <td><p><font size='2' face='Georgia, Times New Roman, Times, serif'><strong><font face='Verdana, Arial, Helvetica, sans-serif'>Hallo Gast!
+        </font></strong> </font></p>
+        <p><font size='2' face='Verdana, Arial, Helvetica, sans-serif'>          Solltest Du als Gast Chatten wollen, klicke unten auf den \"Zum Gast-Chat\" Button,<br>
+          gebe einen Nicknamen ein und betrete den Chat als Gast.<br>
+          <br>
+        Um den Chat ohne Umwege direkt zu betreten, w&auml;re es gut, wenn Du Dich bereits vorher anmeldest.<br>
+       Der Chat list dann Deine Benutzerdaten aus und Du kannst direkt als Benutzer chatte- <br>
+      melde Dich am Besten JETZT an und nutze alle tollen Features!</font></p>
+       <br>Du kannst Dein Profil jederzeit l&ouml;schen... Also, auf gehts! <br><br>
+
+<center>
+
+<form action='".$siteurl.$poc_doc_root."/index.php' method='get'>
+  <div align=\'center\'>
+    <input type='submit' name='Submit' value='Zum Gast-Chat'>
+  </div>
+</form>
+<form action='".$siteurl.$nukeordner."/modules.php' method='get'>
+  <div align=\'center\'>
+    <input type='submit' name='Submit' value='Zur Registrierung'>
+	<input type='hidden' value='profile' name='file'>
+	<input type='hidden' value='register' name='mode'>
+  		<input type='hidden' value='Forums' name='name'>
+</div>
+</form>
+
+</center>
+          <br>
+    </td>
+  </tr>
+</table>";
+
+
+exit;
+
+=====================================
+Ersetze mit
+=====================================
+
+echo"<table class='fonts' width='100%' border='0' cellspacing='0' cellpadding='0'>
+  <tr>
+    <td><p><font size='2' face='Georgia, Times New Roman, Times, serif'><strong><font face='Verdana, Arial, Helvetica, sans-serif'>
+
+Sorry, kein Gast-Login Möglich!
+
+    </td>
+  </tr>
+</table>";
+
+
+exit;
+
+=====================================
+
+=====================================
+
+
+Solltest Du den User über "Your_Account" registrieren lassen wollen, so ersetze in
+poc.php folgendes:
+
+
+=====================================
+Finde 
+=====================================
+
+<form action='".$siteurl.$nukeordner."/modules.php' method='get'>
+  <div align=\'center\'>
+    <input type='submit' name='Submit' value='Zur Registrierung'>
+	<input type='hidden' value='profile' name='file'>
+	<input type='hidden' value='register' name='mode'>
+  		<input type='hidden' value='Forums' name='name'>
+</div>
+</form>
+
+=====================================
+Ersetze mit
+=====================================
+
+<form action='".$siteurl.$nukeordner."/modules.php' method='get'>
+  <div align=\'center\'>
+    <input type='submit' name='Submit' value='Zur Registrierung'>
+	<input type='hidden' value='new_user' name='op'>
+  		<input type='hidden' value='Your_Account' name='name'>
+</div>
+</form>
+
+=====================================
+
+=====================================
+
+
+
+Übertrage die Datei poc.php, im Download im Ordner contrib/nuke in das 
+Hauptverzeichnis von phpnuke.
+
+
+
+
+3) Baue den Link zum Chat in das Menü von nuke ein. Dies geht wie folgt:
+
+Gehe in den Administrationsbereich und erstelle einen neuen Block. 
+Diesen kannst Du nennen wie Du möchtest, sichtbar sollte er für ALLE sein.
+
+Als Inhalt trägst Du folgendes ein:
+
+
+<a href=\"poc.php\"><img src=\"images/button_poc.gif\" alt=\"Auf in den Chat\" width=\"45\" height=\"22\" border=\"0\"></a>";
+
+Wenn ein Gast den Link anklickt, bekommt er eine entsprechende Meldung angezeigt, er möge sich anmelden, oder
+hat die Möglichkeit, den Gast Login zu nutzen, und bekommt entsprechende Buttons angezeigt. 
+
+
+
+Einstellungen in der Datei config.inc.php des POC:
+Beispiel 1: Du möchtest das nur registrierte User des Forum den Chat 
+            benutzen können und Gäste somit keinen Zugang haben.
+
+define('ALLOW_GUEST_LOGIN',false);
+define('SEND_CONFIRMATION_MAIL', false);
+define('AUTOLOGIN_DIRECTLY', true);
+
+Der Chat läuft nun nur über das Forum, eine Ausführung auch als Standalone 
+für User die nicht am Forum teilnehmen ist ausgeschlossen!
+
+Beispiel 2: Du möchtest das die Registrierten Teilnehmer des Forum in den 
+            Chat übernommen werden, trotzdem soll eine Registrierung 
+            für den Chat auch ohne Forum möglich sein und Gäste Zugang haben.
+
+define('ALLOW_GUEST_LOGIN',true);
+define('SEND_CONFIRMATION_MAIL', true); //kann auch auf false stehen wenn du nicht möchtest das die email adresse auf richtigkeit geprüft wird
+define('AUTOLOGIN_DIRECTLY', false);
+
+Der Chat ist in das Forum integriert, eine Nutzung als Standalone für User 
+die das Forum nicht nutzen möchten ist trotzdem möglich
+
+Weitere Informationen findest du auch in unserem Forum unter 
+http://www.phpopenchat.de/ -> Integration in ein Forum Ebenfalls ein MOD zur Anzeige 
+der Onlinechatter auf der Boardindex kannst du dir dort Downloaden.
+
+HTH
+POC-Suport-Team

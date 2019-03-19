@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?=$_SESSION['translator']->get_language()?>">
+  <head>
+    <meta http-equiv="Content-type" content='<?=$_SESSION['template']->get_content_type()?>; charset="<?=$_SESSION['translator']->out('CHARACTER_ENCODING')?>"' />
+    <title>Titel</title>
+    <link rel="stylesheet" href="<?=$_SESSION['template']->get_theme_path()?>/css/default.css" />
+    <script type="text/javascript">
+    /*<![CDATA[*/
+
+    /*/]]>*/
+    </script>
+    <!--
+      $Id: skeleton.tpl.de,v 1.1.2.1 2004/02/25 22:08:50 letreo Exp $
+    -->
+  </head>
+  <body>
+    <div class="satContent">
+      <h1>Überschrift</h1>
+      <p>Hier kann eine Beschreibung dessen erfolgen, was auf dieser Seite zu finden ist.</p>
+      <div class="satContentBox">
+        <dl>
+          <dt class="contentBoxTitle">
+            &nbsp;Contentboxüberschrift
+          </dt>
+          <dd>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    Das ist Inhalt der Contentbox.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="flagBox"><?=$TEMPLATE_OUT['lang_switch']?></div>
+      <ul>
+        <li>
+          <a href="index.php">Homepage des Chats</a>
+        </li>
+      </ul>
+      &nbsp;<br />
+      <div class="menuBox">
+        <dl>
+          <dt class="menuBoxTitle">&nbsp;Menüboxüberschrift</dt>
+          <dd>
+            <p>
+              Das ist der Inhalt der Menübox.
+            </p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </body>
+</html>

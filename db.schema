@@ -1,0 +1,274 @@
+# db.schema
+# SQL database schemas and initial test data
+# $Id: db.schema,v 1.48.2.5 2004/08/26 11:57:24 letreo Exp $
+
+#
+# Dumping data for table 'poc_user_account'
+#
+
+DROP TABLE IF EXISTS poc_user_account;
+CREATE TABLE poc_user_account (  
+  USER varchar(255) NOT NULL,
+  PASSWORD varchar(255),
+  PASSWORD_NEW varchar(255),
+  CONFIRM_CODE char(32),
+  DISABLED int NOT NULL DEFAULT '0',
+  KICKED int NOT NULL DEFAULT '0',
+  PRIMARY KEY (USER)
+) TYPE=MyISAM;
+
+#
+# Test users in alphabetical order of family names
+#
+
+INSERT INTO poc_user_account (USER,PASSWORD,PASSWORD_NEW,DISABLED) VALUES ('mirko','giese','30ebe4d47a2a1661f9d04f84d80466c1',0);
+INSERT INTO poc_user_account (USER,PASSWORD,PASSWORD_NEW,DISABLED) VALUES ('frerk','meyer','b6273c0ba3ae37a4d3d1c6b084797f2e',0);
+INSERT INTO poc_user_account (USER,PASSWORD,PASSWORD_NEW,DISABLED) VALUES ('michael','oertel','fe0d21a59c0f5ba4e4860d83641c84e8',0);
+INSERT INTO poc_user_account (USER,PASSWORD,PASSWORD_NEW,DISABLED) VALUES ('Horseman','pferde','c101da59ac915620dffad079af886fef',0);
+INSERT INTO poc_user_account (USER,PASSWORD,DISABLED) VALUES ('operator','',0);
+
+#
+# Dumping data for table 'poc_user_groups'
+#
+
+DROP TABLE IF EXISTS poc_user_groups;
+CREATE TABLE poc_user_groups (
+  NAME varchar(255) NOT NULL,
+  MEMBER text,
+  PRIMARY KEY (NAME)
+) TYPE=MyISAM;
+
+#
+# Groups
+#
+
+INSERT INTO poc_user_groups VALUES ('chatter',NULL);
+INSERT INTO poc_user_groups VALUES ('operator','a:2:{i:0;s:8:"operator";i:1;s:5:"Admin";}');
+INSERT INTO poc_user_groups VALUES ('moderator',NULL);
+INSERT INTO poc_user_groups VALUES ('vip',NULL);
+
+#
+# Dumping data for table 'poc_user_data'
+#
+
+DROP TABLE IF EXISTS poc_user_data;
+CREATE TABLE poc_user_data (
+  NICK char(32) NOT NULL,
+  USER char(255) NOT NULL,
+  NAME char(255) NOT NULL,
+  THEME char(25) NOT NULL DEFAULT '',
+  BIRTHDAY date NOT NULL,
+  GENDER char(1) NOT NULL DEFAULT '',
+  EMAIL char(255),
+  PRIVATE_INVITED char(32) NOT NULL DEFAULT '',
+  HIDE_EMAIL char(1) NOT NULL DEFAULT '1',
+  PICTURE_URL varchar(255),
+  HOMEPAGE_URL varchar(255),
+  INTERESTS text,
+  MOTTO text,
+  ICQ_NUMBER int NOT NULL DEFAULT '0',
+  AIM_NICKNAME char(30) NOT NULL DEFAULT '',
+  YIM_NICKNAME char(30) NOT NULL DEFAULT '',
+  COLOR char(6) DEFAULT '000000',
+  ONLINE char(1),
+  LAST_CHANNEL char(32),
+  ADVICE char(5) default 'quiet',
+  SCROLLSPEED int,
+  FRIENDS text,
+  GRADE char(20) NOT NULL DEFAULT 'GRADE_ROOKIE',
+  REGTIME datetime,
+  LAST_ACTIVE_TIME datetime,
+  ONLINE_TIME int NOT NULL DEFAULT '0',
+  LINES_PER_DAY double,
+  LOGINS_PER_DAY double,
+  DAYS_REGISTERED integer,
+  LAST_HOST char(50),
+  LAST_IP char(15),
+  LAST_USER_AGENT char(100),
+  LAST_SESSIONID char(35),
+  LAST_REFERER char(100),
+  MISC text,
+  TMP_INSTANCE text NOT NULL DEFAULT '',
+  PRIMARY KEY (NICK),
+  KEY (USER)
+) TYPE=MyISAM;
+
+#
+# Test users in alphabetical order of family names
+#
+
+INSERT INTO poc_user_data (NICK,USER,NAME,BIRTHDAY,EMAIL,COLOR,REGTIME) VALUES ('operator','operator','The Operator','1969-03-24','me@here.net','003300','1999-12-31 23:59:59');
+INSERT INTO poc_user_data (NICK,USER,NAME,BIRTHDAY,EMAIL,COLOR,REGTIME) VALUES ('superman','mirko','Mirko Giese','1971-02-29','mirko@giese.de','66AACC','2000-12-31 23:59:59');
+INSERT INTO poc_user_data (NICK,USER,NAME,BIRTHDAY,EMAIL,COLOR,REGTIME) VALUES ('tux','frerk','Frerk Meyer','1967-06-24','frerk@meyer.de','AACC66','1998-12-31 23:59:59');
+INSERT INTO poc_user_data (NICK,USER,NAME,BIRTHDAY,EMAIL,COLOR,REGTIME) VALUES ('micha','michael','Michael Oertel','1969-03-24','michael@oertel.de','CCAA66','1999-12-31 23:59:59');
+INSERT INTO poc_user_data (NICK,USER,NAME,BIRTHDAY,EMAIL,COLOR,REGTIME,ICQ_NUMBER) VALUES ('Horseman','Horseman','Hartmut Götze','1963-01-01','info@h-h-c.de','CCAACC','1999-12-31 23:59:59',44729151);
+
+#
+# Dumping data for table 'poc_user_notes'
+#
+
+DROP TABLE IF EXISTS poc_user_notes;
+CREATE TABLE poc_user_notes (
+  NICKNAME varchar(32) NOT NULL,
+  ABOUT varchar(32) NOT NULL,
+  NOTE text,
+  PRIMARY KEY (NICKNAME,ABOUT),
+  KEY (NICKNAME,ABOUT)
+) TYPE=MyISAM;
+
+#
+# Dumping data for table 'poc_channels'
+#
+
+DROP TABLE IF EXISTS poc_channels;
+CREATE TABLE poc_channels (
+  NAME char(32) NOT NULL,
+  PASSWORD char(12),
+  MESSAGE char(255),
+  MAX_LINE_NUMBER int NOT NULL,
+  CUR_LINE_NUMBER int NOT NULL,
+  START datetime,
+  STOP datetime,
+  TYPE int NOT NULL DEFAULT '0',
+  INVITED text,
+  ORDER_IDX int,
+  PRIMARY KEY (NAME),
+  KEY (NAME)
+) TYPE=MyISAM;
+
+#
+# Default channel data
+#
+
+INSERT INTO poc_channels(NAME,MAX_LINE_NUMBER,CUR_LINE_NUMBER,TYPE,ORDER_IDX) VALUES ('default',50,0,0,0);
+INSERT INTO poc_channels(NAME,MAX_LINE_NUMBER,CUR_LINE_NUMBER,TYPE,ORDER_IDX) VALUES ('moderation',50,0,1,1);
+
+#
+# Dumping data for table 'poc_line_buffer'
+#
+
+DROP TABLE IF EXISTS poc_line_buffer;
+CREATE TABLE poc_line_buffer (
+  NAME char(32) NOT NULL,
+  LINE_0 text,
+  LINE_1 text,
+  LINE_2 text,
+  LINE_3 text,
+  LINE_4 text,
+  LINE_5 text,
+  LINE_6 text,
+  LINE_7 text,
+  LINE_8 text,
+  LINE_9 text,
+  LINE_10 text,
+  LINE_11 text,
+  LINE_12 text,
+  LINE_13 text,
+  LINE_14 text,
+  LINE_15 text,
+  LINE_16 text,
+  LINE_17 text,
+  LINE_18 text,
+  LINE_19 text,
+  LINE_20 text,
+  LINE_21 text,
+  LINE_22 text,
+  LINE_23 text,
+  LINE_24 text,
+  LINE_25 text,
+  LINE_26 text,
+  LINE_27 text,
+  LINE_28 text,
+  LINE_29 text,
+  LINE_30 text,
+  LINE_31 text,
+  LINE_32 text,
+  LINE_33 text,
+  LINE_34 text,
+  LINE_35 text,
+  LINE_36 text,
+  LINE_37 text,
+  LINE_38 text,
+  LINE_39 text,
+  LINE_40 text,
+  LINE_41 text,
+  LINE_42 text,
+  LINE_43 text,
+  LINE_44 text,
+  LINE_45 text,
+  LINE_46 text,
+  LINE_47 text,
+  LINE_48 text,
+  LINE_49 text,
+  PRIMARY KEY (NAME),
+  KEY (NAME)
+) TYPE=MyISAM;
+
+#
+# Default channel data
+#
+
+INSERT INTO poc_line_buffer (NAME) VALUES ('default');
+INSERT INTO poc_line_buffer (NAME) VALUES ('moderation');
+
+#
+# Dumping data for table 'poc_mails'
+#
+
+DROP TABLE IF EXISTS poc_mails;
+CREATE TABLE poc_mails (
+  SENDER char(25) NOT NULL,
+  TIME char(19) NOT NULL,
+  RECIPIENT char(25) NOT NULL,
+  MAIL text,
+  TRASHED_BY_SENDER int NOT NULL DEFAULT '0',
+  TRASHED_BY_RECIPIENT int NOT NULL DEFAULT '0',
+  PRIMARY KEY (SENDER,RECIPIENT,TIME),
+  KEY (SENDER),
+  KEY (RECIPIENT)
+) TYPE=MyISAM;
+
+#
+# Dumping data for table 'poc_hits'
+#
+
+DROP TABLE IF EXISTS poc_hits;
+CREATE TABLE poc_hits (
+  USER char(25) NOT NULL,
+  USERPAGE int NOT NULL DEFAULT '0',
+  LINE int NOT NULL DEFAULT '0',
+  BANN int NOT NULL DEFAULT '0',
+  LOGIN int NOT NULL DEFAULT '0',
+  PRIMARY KEY (USER),
+  KEY (USER)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS poc_banned_users;
+CREATE TABLE poc_banned_users (  
+  USER varchar(25) NOT NULL,
+  TIME_BANNED datetime NOT NULL DEFAULT '2000-12-31 23:59:59',
+  BANNED_FOR char(32) NOT NULL DEFAULT '',
+  PRIMARY KEY (USER,BANNED_FOR),
+  KEY (USER),
+  KEY (BANNED_FOR)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS poc_cache;
+CREATE TABLE poc_cache (
+  ID char(255) NOT NULL,
+  MAX_AGE datetime,
+  CONTENT text,
+  PRIMARY KEY (ID),
+  KEY (ID)
+) TYPE=MyISAM;
+
+DROP TABLE IF EXISTS poc_guestbook;
+CREATE TABLE poc_guestbook (
+  USER varchar(25) NOT NULL,
+  SENDER varchar(25) NOT NULL,
+  TIME int NOT NULL,
+  POST text,
+  PRIMARY KEY (SENDER,TIME),
+  KEY (USER,TIME)
+) TYPE=MyISAM;
+

@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>phpDocumentor Parser Errors and Warnings</title>
+			<link rel="stylesheet" href="media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<a href="#Post-parsing">Post-parsing</a><br>
+<a href="#array_test.php">array_test.php</a><br>
+<a href="#benchmark.php">benchmark.php</a><br>
+<a href="#channel_buffer.php">channel_buffer.php</a><br>
+<a href="#class.Channel.inc">class.Channel.inc</a><br>
+<a href="#class.Channel_Buffer_DB.inc">class.Channel_Buffer_DB.inc</a><br>
+<a href="#class.Channel_Buffer_Mem.inc">class.Channel_Buffer_Mem.inc</a><br>
+<a href="#class.Chat.inc">class.Chat.inc</a><br>
+<a href="#class.Chatter.inc">class.Chatter.inc</a><br>
+<a href="#class.Guestbook.inc">class.Guestbook.inc</a><br>
+<a href="#class.Guestbook_Post.inc">class.Guestbook_Post.inc</a><br>
+<a href="#class.Language.inc">class.Language.inc</a><br>
+<a href="#class.Line.inc">class.Line.inc</a><br>
+<a href="#class.Logger.inc">class.Logger.inc</a><br>
+<a href="#class.Mail.inc">class.Mail.inc</a><br>
+<a href="#class.Mailbox.inc">class.Mailbox.inc</a><br>
+<a href="#class.Mail_Dispatcher.inc">class.Mail_Dispatcher.inc</a><br>
+<a href="#class.Recipient.inc">class.Recipient.inc</a><br>
+<a href="#class.Template.inc">class.Template.inc</a><br>
+<a href="#class.Translator.inc">class.Translator.inc</a><br>
+<a href="#class.UploadFile.inc">class.UploadFile.inc</a><br>
+<a href="#client.php">client.php</a><br>
+<a href="#config.inc.php">config.inc.php</a><br>
+<a href="#configure.php">configure.php</a><br>
+<a href="#confirm.php">confirm.php</a><br>
+<a href="#de.inc">de.inc</a><br>
+<a href="#en.inc">en.inc</a><br>
+<a href="#external_login.php">external_login.php</a><br>
+<a href="#flock.php">flock.php</a><br>
+<a href="#frameset.php">frameset.php</a><br>
+<a href="#friends.php">friends.php</a><br>
+<a href="#getlines.php">getlines.php</a><br>
+<a href="#help.php">help.php</a><br>
+<a href="#ignore.php">ignore.php</a><br>
+<a href="#index.php">index.php</a><br>
+<a href="#input.php">input.php</a><br>
+<a href="#insert_icon.php">insert_icon.php</a><br>
+<a href="#invite.php">invite.php</a><br>
+<a href="#jump.php">jump.php</a><br>
+<a href="#ldap.php">ldap.php</a><br>
+<a href="#mail.php">mail.php</a><br>
+<a href="#netiquette.php">netiquette.php</a><br>
+<a href="#new_guestbook_entry.php">new_guestbook_entry.php</a><br>
+<a href="#notes.php">notes.php</a><br>
+<a href="#participants.php">participants.php</a><br>
+<a href="#pivottable.inc.php">pivottable.inc.php</a><br>
+<a href="#private_destroy.php">private_destroy.php</a><br>
+<a href="#private_frameset.php">private_frameset.php</a><br>
+<a href="#private_getlines.php">private_getlines.php</a><br>
+<a href="#private_input.php">private_input.php</a><br>
+<a href="#profile.php">profile.php</a><br>
+<a href="#profile_misc.php">profile_misc.php</a><br>
+<a href="#register.php">register.php</a><br>
+<a href="#regulars.php">regulars.php</a><br>
+<a href="#rsfilter.inc.php">rsfilter.inc.php</a><br>
+<a href="#sem_remove_bug_test.php">sem_remove_bug_test.php</a><br>
+<a href="#send_passwd.php">send_passwd.php</a><br>
+<a href="#shm_test.php">shm_test.php</a><br>
+<a href="#skeleton.php">skeleton.php</a><br>
+<a href="#status.php">status.php</a><br>
+<a href="#test.php">test.php</a><br>
+<a href="#test2.php">test2.php</a><br>
+<a href="#test3.php">test3.php</a><br>
+<a href="#test4.php">test4.php</a><br>
+<a href="#test5.php">test5.php</a><br>
+<a href="#testcache.php">testcache.php</a><br>
+<a href="#testdatabases.inc.php">testdatabases.inc.php</a><br>
+<a href="#testgenid.php">testgenid.php</a><br>
+<a href="#testmssql.php">testmssql.php</a><br>
+<a href="#testoci8.php">testoci8.php</a><br>
+<a href="#testoci8cursor.php">testoci8cursor.php</a><br>
+<a href="#testpaging.php">testpaging.php</a><br>
+<a href="#testpear.php">testpear.php</a><br>
+<a href="#testsessions.php">testsessions.php</a><br>
+<a href="#tmssql.php">tmssql.php</a><br>
+<a href="#unlock_channel.php">unlock_channel.php</a><br>
+<a href="#userpage.php">userpage.php</a><br>
+<a href="#Version.php">Version.php</a><br>
+<a href="#whois_online.php">whois_online.php</a><br>
+<h1>Post-parsing</h1>
+<h2>Warnings:</h2><br>
+<b>Warning</b> - 
+duplicate define element "VIP" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_WRONG_FORMAT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MODERATOR" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MESSAGE_FORWARDED_TO_MODERATOR" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "APPROVE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "DISAPPROVE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "JUMP_FAILED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "JUMP_ERROR_CONTENT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_EXPLANATION" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_ME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_COMMAND" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INLINE_HELP" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "JUMP_ERROR_HOST" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "NOTES_NOT_UPDATED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_NOTES" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INTERESTS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_INTERESTS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "AGE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_BIRTHDAY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_HOMEPAGE_URL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "BIRTHDAY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MOTTO" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_MOTTO" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "UPDATE_NOTES" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "NOTES_UPDATED_SUCCESSFULLY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATTER_NOTES" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LOGINS_PER_DAY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LINES_PER_DAY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_MSG" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_NICK" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ADD_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "DEL_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATTER_ADMIN" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHANNEL_ADMIN" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MODERATED_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PRIVATE_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "UPDATE_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATTER_DELETE_SUCCESS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATTER_DISABLED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATTER_NOT_DISABLED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GROUP_UPDATE_FAILED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GROUP_UPDATE_SUCCESS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATTER_DELETE_FAILED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PUBLIC_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "WELCOME_ADMIN" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_IGNORE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_UNIGNORE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_LOCATE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_QUERY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_JOIN" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_KICK" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_BAN" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "UNLOCATED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ADMINISTRATION" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LOCATED_AT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_QUIT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IRC_HELP" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HOMEPAGE_URL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_YIM_NICKNAME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "EMAIL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "REGISTER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "NAME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_MAIL_HOST" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_PICTURE_URL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_COLOR" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PICTURE_URL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "REGISTRATION_SUCCESSFULLY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRM_SUCCESS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRM_FAILED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "STATUS_CONFIRMATION" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRMATION" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LOGIN_NOW" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_EMAIL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_NAME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SMILEY_CODE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SMILEY_EXPLANATION" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_TEASER3" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_SUBTITLE3" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_TEASER2" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MORE_SMILEY_CODES" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "OWN_PRIVATE_IMAGE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_NICKNAME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_PASSWORD" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "FILLOUT_TO_REGISTER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "REGISTRATION" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "RECIPIENT_PRIVATE_IMAGE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRMATION_MESSAGE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "FORGOT_PASSWORD_HINT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SIZE_EXPECTED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PRIVATE_IMAGE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IMG_SIZE_TO_BIG" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IMG_FILE_TO_BIG" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PROFILE_UPDATA_NOT_SUCCESSFUL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "WRONG_MIME_TYPE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRMATION_MAIL_SUBJECT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRMATION_MAIL_BODY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_AIM_NICKNAME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "YIM_NICKNAME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "AIM_NICKNAME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_ICQ_NUMBER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ICQ_NUMBER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PROFILE_UPDATA_SUCCESSFUL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHANGE_PROFILE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "QUIET" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ALERT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ADVICE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "TEXT_COLOR" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIGURATION" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SOUND" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SCROLL_SPEED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PROFILE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PERSONAL_DATA" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHOOSE_THEME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SWITCH_OFF_IE_CLICK" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHOOSE_SCROLL_SPEED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATTER_ENABLED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATTER_NOT_ENABLED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "BANNED_MSG" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATTER_COUNT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "DENIED_FOR_GUESTS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "RESTRICT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "OPERATOR_PASSWORD" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MAKE_NOTE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HIDE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GENDER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PAGE_VIEWS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GRADE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MALE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "FEMALE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GENDER_NOTE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IMPORTANT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ADMIN_HINT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SEARCH" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SEARCH_RESULTS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CANCEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SUBMIT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GUEST_NICK_PREFIX" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ALL_GUESTS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ALERT_NEW_LINE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CLOSE_WINDOW" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATTER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "OPERATOR" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "REALLY_QUESTION" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONTACT_HINT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GOTO_HOME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GRADE_ROOKIE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GRADE_MEMBER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "JS_ALERT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HAPPY_BIRTHDAY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CREATE_NEW" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "EDIT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SAVE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "DELETE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHOOSEN" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PN_NOT_LOGGED_IN" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CB_LINE_OFFSET" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/test/channel_buffer.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CB_LINE_MEMORY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/test/channel_buffer.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CB_CUR_LINE_IDX" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/test/channel_buffer.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CB_MAX_LINE_IDX" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/test/channel_buffer.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PN_HINT_NOT_LOGGED_IN" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MISCELLANEOUS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "OPTIONAL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "YOU_ARE_BUSY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATTER_IS_BUSY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GRADE_OPERATOR" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GRADE_ELITE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GRADE_REGULAR" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "WANTS_TO_TALK" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "DAYS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PASSWORD_HAS_BEEN_SENT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHOOSE_LANGUAGE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "NICKNAME_NOT_FOUND" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHATMAIL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHAT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GUESTBOOK_ENTRY_SAVED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GUESTBOOK_NEW_ENTRY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LAST_SEEN" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "REGULARS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "USER_SINCE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "USER_PAGE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRM_DISINVITE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRM_FRIEND" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "REGULARS_HINT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SINCE_REGISTRATION" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ACCOUNT_DATA" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INDIVIDUAL_DATA" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ONLINE_TIME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "RANK" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "NOT_FOUND" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRM_INVITE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRM_UNIGNORE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LAST_IP" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LAST_REFERER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LAST_HOST" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LAST_ACTIVE_TIME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LAST_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LAST_USER_AGENT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LAST_SESSIONID" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ERROR_CHANNEL_UPDATE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRM_IGNORE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SUCCESS_CHANNEL_UPDATE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MOVE_TO_TOP" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "REGTIME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PRIVATE_CHAT_NEW_WINDOW" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "WHO_IS_ONLINE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MAIL_COUNT_LAST_24h" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_PASSWORD" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "UNRED_MAILS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MAIL_COUNT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "REGISTERED_COUNT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LAST_REGISTERED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_NICKNAME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_CHANNELS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_ADVICE_SOUND" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GUESTBOOK" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_ADVICE_ALERT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_ADVICE_QUIET" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INFO_RANKING" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ONLINE_TIME_AVG" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ONLINE_COUNT_LAST24h" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_WHO_IS_ONLINE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "FORGOT_PASSWD_MAIL_SUBJECT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "OPEN_USER_PAGE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SELECT_NICK" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHANGE_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "FORGOT_PASSWD_MAIL_BODY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_REG_PASSWORD" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "RETRIEVE_PASSWORD" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "STATISTICS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "FORGOT_PASSWD_MAIL_HINT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "YOUR_PASSWORD_IS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_REG_NICKNAME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_SUBTITLE2" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_HELP" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "BODIES" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PRIVATE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SYSTEM_MESSAGES" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IGNORE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INVITE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "OUTPUT_FILTER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "WHISPERED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "WHISPER_TO" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SAY_TO" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "EVERYBODY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INVITATION_MESSAGE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SPEAK_TO" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIGURE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "NO_CLICKETY_CLICK" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ADD_TO_FRIENDLIST" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LINE_HAS_BEEN_SENT_TO" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "FULL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "UNLOCK_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHOOSE_RECIPIENT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHOOSE_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GUESTS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INFO" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "EMAIL_US" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "NOTE_ABOUT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ICON_LIST" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "WHISPERS_TO" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SAYS_TO" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "WELCOME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "TITLE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INTRO" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GREETING" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LOGIN_WELCOME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHARACTER_ENCODING" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CONFIRM_MSG" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/invite.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate function element "check_private_icon" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/regulars.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate class element "Channel_Buffer" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Channel_Buffer_Mem.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate function element "check_private_icon" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/whois_online.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate function element "analyze_post_data" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/register.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate function element "testdb" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/testgenid.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "NICKNAME" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "PASSWORD" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IS_TOO_BUSY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LEAVES_THIS_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IS_NOT_ONLINE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "JOINS_THIS_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "JOINS_THE_CHAT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LEAVES_THE_CHAT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "STORE_ACCOUNT_DATA" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LOGIN" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GO" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "EXIT_CHAT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "FORGOT_PASSWORD" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "YOU_HAVE_NEW_MAIL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate function element "testdb" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/benchmark.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MAIL_SEND_DATE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "RECIPIENT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MAIL_RECEIVED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LAST_TOUCH_RECIPIENT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LAST_TOUCH_SENDER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SENDER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "DELETE_MAIL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MAIL_SEND_HINT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SEND" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "RECIPIENT_HINT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MOVE_TO_TRASH" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "GET_MAIL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "NO_FRIENDS_FOUND" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "NO_SUCH_RECIPIENT_FOUND" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_INVITE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_IGNORE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_FRIENDS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_MAIL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "LOGOUT_SHORTLY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_SPEAK" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_CHANNEL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_TITLE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "BODY_TO_SHORT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_HINT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_SUBTITLE1" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_TEASER1" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "BODY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HELP_CONFIGURE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INVITED_CHATTERS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INVITE_CHATTERS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INVITE_CHATTER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "DISINVITE_CHATTER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "DISINVITED_CHATTERS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_IGNORE_CHATTERS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "UNIGNORED_CHATTER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IGNORED" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IGNORE_CHATTERS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IGNORED_CHATTER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "IGNORE_CHATTER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "UNIGNORE_CHATTER" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "SUBJECT" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_INVITE_CHATTERS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "TRASH" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "OUTBOX" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "COMPOSE" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "REPLY" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "FORWARD" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "FRIENDS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "INBOX" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ADD_TO_FRIENDS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "ALL_CHATTERS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "DEL_FRIEND" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "HINT_ADD_FRIENDS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning</b> - 
+duplicate define element "MAIL" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<h1>approve.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 105</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/approve.php<br>
+<h1>array_test.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 21</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/test/array_test.php<br>
+<h1>benchmark.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 85</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/benchmark.php<br>
+<h1>channel_buffer.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 9</b> - Unknown tag "@module" used<br>
+<b>Warning on line 11</b> - Unknown tag "@bugs" used<br>
+<b>Warning on line 158</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/test/channel_buffer.php<br>
+<h1>class.Channel.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 42</b> - no @package tag was used in a DocBlock for class Channel<br>
+<b>Warning on line 240</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Channel.inc<br>
+<h1>class.Channel_Buffer_DB.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 53</b> - no @package tag was used in a DocBlock for class Channel_Buffer<br>
+<b>Warning on line 561</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Channel_Buffer_DB.inc<br>
+<h1>class.Channel_Buffer_Mem.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 55</b> - no @package tag was used in a DocBlock for class Channel_Buffer<br>
+<b>Warning on line 444</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Channel_Buffer_Mem.inc<br>
+<h1>class.Chat.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 48</b> - no @package tag was used in a DocBlock for class Chat<br>
+<b>Warning on line 1720</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Chat.inc<br>
+<h1>class.Chatter.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 42</b> - no @package tag was used in a DocBlock for class Chatter<br>
+<b>Warning on line 3109</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Chatter.inc<br>
+<h2>Errors:</h2><br>
+<b>Error on line 2245</b> - @access was passed neither "public" nor "private."  Was passed: "puplic"<br>
+<h1>class.Guestbook.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 43</b> - no @package tag was used in a DocBlock for class Guestbook<br>
+<b>Warning on line 208</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Guestbook.inc<br>
+<h1>class.Guestbook_Post.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 45</b> - no @package tag was used in a DocBlock for class Guestbook_Post<br>
+<b>Warning on line 116</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Guestbook_Post.inc<br>
+<h1>class.Language.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 36</b> - no @package tag was used in a DocBlock for class Language<br>
+<b>Warning on line 239</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Language.inc<br>
+<h1>class.Line.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 44</b> - no @package tag was used in a DocBlock for class Line<br>
+<b>Warning on line 174</b> - @ignore tag used for method element "Line::get_sender" will be ignored<br>
+<b>Warning on line 281</b> - @ignore tag used for method element "Line::set_chatter" will be ignored<br>
+<b>Warning on line 700</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Line.inc<br>
+<h1>class.Logger.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 40</b> - no @package tag was used in a DocBlock for class Logger<br>
+<b>Warning on line 152</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Logger.inc<br>
+<h1>class.Mail.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 40</b> - no @package tag was used in a DocBlock for class Mail<br>
+<b>Warning on line 280</b> - @ignore tag used for method element "Mail::is_red_by_recipient" will be ignored<br>
+<b>Warning on line 299</b> - @ignore tag used for method element "Mail::is_red_by_sender" will be ignored<br>
+<b>Warning on line 366</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Mail.inc<br>
+<h1>class.Mailbox.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 40</b> - no @package tag was used in a DocBlock for class Mailbox<br>
+<b>Warning on line 300</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Mailbox.inc<br>
+<h1>class.Mail_Dispatcher.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 40</b> - no @package tag was used in a DocBlock for class Mail_Dispatcher<br>
+<b>Warning on line 271</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Mail_Dispatcher.inc<br>
+<h1>class.Recipient.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 37</b> - no @package tag was used in a DocBlock for class Recipient<br>
+<b>Warning on line 43</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Recipient.inc<br>
+<h1>class.Template.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 42</b> - no @package tag was used in a DocBlock for class Template<br>
+<b>Warning on line 378</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Template.inc<br>
+<h1>class.Translator.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 43</b> - no @package tag was used in a DocBlock for class Translator<br>
+<b>Warning on line 102</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.Translator.inc<br>
+<h1>class.UploadFile.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 36</b> - no @package tag was used in a DocBlock for class UploadFile<br>
+<b>Warning on line 185</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/class.UploadFile.inc<br>
+<h1>client.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 194</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/client.php<br>
+<h1>config.inc.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 48</b> - 
+duplicate define element "TMPDIR" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/config.inc.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 50</b> - 
+duplicate define element "TMPDIR" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/config.inc.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 52</b> - 
+duplicate define element "TMPDIR" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/config.inc.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 54</b> - 
+duplicate define element "TMPDIR" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/config.inc.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 63</b> - 
+duplicate define element "POC_OS" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/config.inc.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 461</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/config.inc.php<br>
+<h1>configure.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 99</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/configure.php<br>
+<h1>confirm.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 78</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/confirm.php<br>
+<h1>de.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 495</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/de.inc<br>
+<h1>en.inc</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 495</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/languages/en.inc<br>
+<h1>external_login.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 96</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/external_login.php<br>
+<h1>flock.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 12</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/test/flock.php<br>
+<h1>frameset.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 55</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/frameset.php<br>
+<h1>friends.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 92</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/friends.php<br>
+<h1>getlines.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 115</b> - 
+duplicate define element "NOTICE_ICON" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 116</b> - 
+duplicate define element "PRIVATE_CHAT_ICON" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 117</b> - 
+duplicate define element "SAY_TO_ICON" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 118</b> - 
+duplicate define element "WHISPER_TO_ICON" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 119</b> - 
+duplicate define element "USERPAGE_ICON" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 120</b> - 
+duplicate define element "INVITE_ICON" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 121</b> - 
+duplicate define element "DISINVITE_ICON" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 122</b> - 
+duplicate define element "IGNORE_CHATTER_ICON" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 123</b> - 
+duplicate define element "UNIGNORE_CHATTER_ICON" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 124</b> - 
+duplicate define element "ADD_FRIEND_ICON" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 125</b> - 
+duplicate define element "MAIL_ICON" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 362</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/getlines.php<br>
+<h1>help.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 60</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/help.php<br>
+<h1>ignore.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 79</b> - 
+duplicate define element "CONFIRM_MSG" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/ignore.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 111</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/ignore.php<br>
+<h1>index.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 283</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/admin/index.php<br>
+<b>Warning on line 381</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/index.php<br>
+<h1>input.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 475</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/input.php<br>
+<h1>insert_icon.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 55</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/insert_icon.php<br>
+<h1>invite.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 97</b> - 
+duplicate define element "CONFIRM_MSG" in file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/invite.php will be ignored.
+Use an @ignore tag on the original if you want this case to be documented.<br>
+<b>Warning on line 131</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/invite.php<br>
+<h1>jump.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 113</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/jump.php<br>
+<h1>ldap.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 69</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/test/ldap.php<br>
+<h1>mail.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 430</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/mail.php<br>
+<h1>netiquette.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 66</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/netiquette.php<br>
+<h1>new_guestbook_entry.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 64</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/new_guestbook_entry.php<br>
+<h1>notes.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 80</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/notes.php<br>
+<h1>participants.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 49</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/participants.php<br>
+<h1>pivottable.inc.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 162</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/pivottable.inc.php<br>
+<h1>private_destroy.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 93</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/private_destroy.php<br>
+<h1>private_frameset.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 152</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/private_frameset.php<br>
+<h1>private_getlines.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 135</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/private_getlines.php<br>
+<h1>private_input.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 83</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/private_input.php<br>
+<h1>profile.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 247</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/profile.php<br>
+<h1>profile_misc.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 107</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/profile_misc.php<br>
+<h1>register.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 146</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/register.php<br>
+<h1>regulars.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 157</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/regulars.php<br>
+<h1>rsfilter.inc.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 51</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/rsfilter.inc.php<br>
+<h1>sem_remove_bug_test.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 16</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/test/sem_remove_bug_test.php<br>
+<h1>send_passwd.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 78</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/send_passwd.php<br>
+<h1>shm_test.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 23</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/test/shm_test.php<br>
+<h1>skeleton.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 76</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/skeleton.php<br>
+<h1>status.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 81</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/status.php<br>
+<h1>test.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 227</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/test.php<br>
+<b>Warning on line 1059</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/test.php<br>
+<h1>test2.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 39</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/test2.php<br>
+<h1>test3.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 31</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/test3.php<br>
+<h1>test4.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 80</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/test4.php<br>
+<h1>test5.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 47</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/test5.php<br>
+<h1>testcache.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 28</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/testcache.php<br>
+<h1>testdatabases.inc.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 193</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/testdatabases.inc.php<br>
+<h1>testgenid.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 35</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/testgenid.php<br>
+<h1>testmssql.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 49</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/testmssql.php<br>
+<h1>testoci8.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 69</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/testoci8.php<br>
+<h1>testoci8cursor.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 81</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/testoci8cursor.php<br>
+<h1>testpaging.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 75</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/testpaging.php<br>
+<h1>testpear.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 33</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/testpear.php<br>
+<h1>testsessions.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 32</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/testsessions.php<br>
+<h1>tmssql.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 64</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/include/adodb/tests/tmssql.php<br>
+<h1>unlock_channel.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 54</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/unlock_channel.php<br>
+<h1>userpage.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 225</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/userpage.php<br>
+<h1>Version.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 16</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/Version.php<br>
+<h1>whois_online.php</h1>
+<h2>Warnings:</h2><br>
+<b>Warning on line 143</b> - no @package tag was used in a DocBlock for file /usr/www/htdocs/lamp.pixelpark.com/docs/chat3/whois_online.php<br>
+	<p class="notes" id="credit">
+		Documention generated on Fri,  2 May 2003 10:50:55 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.2.0rc2</a>
+	</p>
+	</body>
+</html>
